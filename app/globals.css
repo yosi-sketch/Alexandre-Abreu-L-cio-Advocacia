@@ -3,32 +3,32 @@
 :root {
   color-scheme: light dark;
   
-  /* Primary Contrast: Obsidian Midnight & Silk White */
-  --color-black-pure: #07090e;
-  --color-black-surface: #0c1019;
-  --color-black-card: #111723;
-  --color-black-hover: #182234;
+  /* Primary Contrast: Midnight Ink Navy & Silk Pearl */
+  --color-black-pure: #060d16;
+  --color-black-surface: #0a1524;
+  --color-black-card: #0f2035;
+  --color-black-hover: #162c47;
 
   --color-white-pure: #ffffff;
-  --color-white-surface: #f8fafc;
+  --color-white-surface: #fbf9f5;
   --color-white-card: #ffffff;
-  --color-white-muted: #f1f5f9;
+  --color-white-muted: #f4efe6;
 
-  /* Primary Logo Metallic Polished Gold (Dr. Alesson André) */
-  --brand-gold-champagne: #faf0d7;
-  --brand-gold-light: #f5e0a9;
-  --brand-gold-accent: #e5b242;
-  --brand-gold-warm: #d49d2c;
-  --brand-gold-primary: #c58b24;
-  --brand-gold-rich: #9e6b15;
-  --brand-gold-deep: #6e4609;
-  --brand-gold-noir: #1f1302;
+  /* Primary Logo Antique Caramel Bronze Gold (Santiago, Silva & Santos) */
+  --brand-gold-champagne: #fcf6ea;
+  --brand-gold-light: #f3dfbc;
+  --brand-gold-accent: #dfae67;
+  --brand-gold-warm: #c59b5f;
+  --brand-gold-primary: #b38245;
+  --brand-gold-rich: #8f6229;
+  --brand-gold-deep: #5f3e15;
+  --brand-gold-noir: #1d1204;
 
-  /* Secondary Brand Accent: Deep Slate Navy (Suit & Studio Palette) */
-  --brand-navy-light: #3b82f6;
-  --brand-navy-primary: #12233f;
-  --brand-navy-deep: #0a1424;
-  --brand-navy-midnight: #050a14;
+  /* Secondary Brand Accent: Deep Prestige Midnight Navy */
+  --brand-navy-light: #326096;
+  --brand-navy-primary: #0e223a;
+  --brand-navy-deep: #091728;
+  --brand-navy-midnight: #050d18;
 }
 
 @theme inline {
@@ -36,28 +36,28 @@
   --font-cinzel: var(--font-cinzel), "Cinzel", "Trajan Pro", serif;
   --font-sans: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
   
-  --color-gold-50: #fdfbf7;
-  --color-gold-100: #faf0d7;
-  --color-gold-200: #f5e0a9;
-  --color-gold-300: #e5b242;
-  --color-gold-400: #d49d2c;
-  --color-gold-500: #c58b24;
-  --color-gold-600: #9e6b15;
-  --color-gold-700: #7a500e;
-  --color-gold-800: #523408;
-  --color-gold-900: #1f1302;
+  --color-gold-50: #fdfaf3;
+  --color-gold-100: #fcf6ea;
+  --color-gold-200: #f3dfbc;
+  --color-gold-300: #dfae67;
+  --color-gold-400: #c59b5f;
+  --color-gold-500: #b38245;
+  --color-gold-600: #8f6229;
+  --color-gold-700: #6f491c;
+  --color-gold-800: #4e3211;
+  --color-gold-900: #1d1204;
 
-  --color-navy-50: #f0f5ff;
-  --color-navy-100: #e0ebff;
-  --color-navy-200: #c7d8fe;
-  --color-navy-300: #9bbafc;
-  --color-navy-400: #6091f7;
-  --color-navy-500: #3b71ef;
-  --color-navy-600: #2554e2;
-  --color-navy-700: #1d40ce;
-  --color-navy-800: #12233f;
-  --color-navy-900: #0a1424;
-  --color-navy-950: #050a14;
+  --color-navy-50: #f1f5fa;
+  --color-navy-100: #dfebf6;
+  --color-navy-200: #bfd5ec;
+  --color-navy-300: #93b7df;
+  --color-navy-400: #5d90cc;
+  --color-navy-500: #3b71b8;
+  --color-navy-600: #2a5592;
+  --color-navy-700: #1c3e6f;
+  --color-navy-800: #0f2544;
+  --color-navy-900: #091728;
+  --color-navy-950: #050d18;
 }
 
 html {
@@ -68,13 +68,13 @@ html {
 
 body {
   background: #ffffff;
-  color: #0f172a;
+  color: #091728;
   font-family: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
-  caret-color: #d49d2c;
+  caret-color: #c59b5f;
 }
 
 ::selection {
-  background: #d49d2c;
+  background: #c59b5f;
   color: #ffffff;
 }
 
@@ -97,11 +97,11 @@ body {
 }
 
 .eyebrow-gold {
-  color: #9e6b15;
+  color: #8f6229;
 }
 
 .eyebrow-navy {
-  color: #1d40ce;
+  color: #1c3e6f;
 }
 
 .eyebrow-dark {
@@ -109,7 +109,7 @@ body {
 }
 
 .eyebrow-light {
-  color: #f5e0a9;
+  color: #f3dfbc;
 }
 
 .eyebrow-gold::before,
@@ -148,7 +148,7 @@ body {
   bottom: 0;
   left: 0;
   height: 2px;
-  background: #d49d2c;
+  background: #c59b5f;
   content: "";
   transform: scaleX(0);
   transform-origin: center;
@@ -156,7 +156,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #0f172a;
+  color: #091728;
 }
 
 .nav-link:hover::after {
@@ -170,6 +170,6 @@ body {
 }
 
 .footer-link:hover {
-  color: #e5b242;
+  color: #dfae67;
   transform: translateX(2px);
 }

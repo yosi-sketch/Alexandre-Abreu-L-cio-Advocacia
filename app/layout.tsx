@@ -36,73 +36,72 @@ const bodyFont = Plus_Jakarta_Sans({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#07090e",
+  themeColor: "#060d16",
   colorScheme: "light dark",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.alessonandre.adv.br"),
-  title: "Alesson André | Advogado Criminal e Trabalhista em Carmo do Rio Claro · MG",
+  metadataBase: new URL("https://www.santiagosilvaesantos.adv.br"),
+  title: "Santiago, Silva & Santos | Sociedade de Advogados · LSS Advogados em Cláudio · MG",
   description:
-    "⚖️ Dr. Alesson André — Advogado Criminal e Trabalhista (OAB/MG 233.850). Atuação combativa em Direito Criminal, Plantão em Delegacias e Flagrantes, Fóruns, Cartórios, Direito Trabalhista e Previdenciário. Nota máxima 5,0 ★ no Google (136 avaliações). Sede no Andar dos Advogados, Carmo do Rio Claro - MG.",
+    "🏛️ Santiago, Silva & Santos Sociedade de Advogados (LSS Advogados Associados). Orientação jurídica clara e responsável em Direito Civil, Previdenciário (INSS), Trabalhista, Imobiliário e Família. Nota máxima 5,0 ★ no Google (124 avaliações). Sede em Cláudio - MG.",
   keywords: [
-    "Alesson André",
-    "Alesson André Advogado",
-    "Advogado Alesson André",
-    "Advogado em Carmo do Rio Claro MG",
-    "Advogado Criminalista Carmo do Rio Claro",
-    "Advogado Trabalhista Carmo do Rio Claro",
-    "Advogado Criminalista Sul de Minas",
-    "Audiência de Custódia Carmo do Rio Claro",
-    "Habeas Corpus Carmo do Rio Claro",
-    "Delegacia e Flagrantes Carmo do Rio Claro",
-    "Advogado Correspondente Carmo do Rio Claro",
-    "Direito do Trabalho Carmo do Rio Claro",
-    "Rescisão Trabalhista e Direitos do Trabalhador",
-    "Andar dos Advogados Carmo do Rio Claro",
-    "OAB MG 233850",
-    "Alfenas Passos Campo do Meio Carmo do Rio Claro",
+    "Santiago Silva e Santos Sociedade de Advogados",
+    "LSS Advogados Associados",
+    "Advogado em Cláudio MG",
+    "Advogados Cláudio Minas Gerais",
+    "Armando Santiago Advogado",
+    "Lucas da Silva e Silva Advogado",
+    "Ana Carolina Santos Advogada",
+    "Direito Previdenciário Cláudio MG",
+    "Aposentadoria Rural e Urbana Cláudio MG",
+    "Direito do Trabalho Cláudio MG",
+    "Direito Imobiliário e Usucapião Cláudio MG",
+    "Direito Civil e Contratos Cláudio MG",
+    "Direito de Família e Sucessões Cláudio MG",
+    "Escritório de Advocacia Cláudio MG",
+    "Divinópolis Carmópolis Oliveira Cláudio MG",
   ],
-  authors: [{ name: "Alesson André — Advogado" }],
-  creator: "Alesson André — Advogado",
-  publisher: "Alesson André — Advogado",
+  authors: [{ name: "Santiago, Silva & Santos Sociedade de Advogados" }],
+  creator: "Santiago, Silva & Santos Sociedade de Advogados",
+  publisher: "Santiago, Silva & Santos Sociedade de Advogados",
   formatDetection: {
     telephone: true,
     address: true,
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=aa3", sizes: "any" },
-      { url: "/favicon-32x32.png?v=aa3", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-16x16.png?v=aa3", type: "image/png", sizes: "16x16" },
-      { url: "/icon.png?v=aa3", type: "image/png", sizes: "192x192" },
-      { url: "/icon-512x512.png?v=aa3", type: "image/png", sizes: "512x512" },
+      { url: "/favicon.ico?v=sss2", sizes: "any" },
+      { url: "/favicon-32x32.png?v=sss2", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png?v=sss2", type: "image/png", sizes: "16x16" },
+      { url: "/icon.png?v=sss2", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512x512.png?v=sss2", type: "image/png", sizes: "512x512" },
     ],
-    shortcut: "/favicon.ico?v=aa3",
-    apple: [{ url: "/apple-icon.png?v=aa3", sizes: "180x180" }],
+    shortcut: "/favicon.ico?v=sss2",
+    apple: [{ url: "/apple-icon.png?v=sss2", sizes: "180x180" }],
   },
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://www.alessonandre.adv.br",
-    title: "Alesson André | Advogado Criminal e Trabalhista em Carmo do Rio Claro · MG",
+    url: "https://www.santiagosilvaesantos.adv.br",
+    title: "Santiago, Silva & Santos | Sociedade de Advogados · Cláudio · MG",
     description:
-      "⚖️ Defesa técnica, combativa e estratégica. Atuação em Direito Criminal, Trabalhista, Administrativa, Fóruns, Delegacias e Cartórios. 5,0 ★ no Google (136 avaliações). Sede no Andar dos Advogados, Carmo do Rio Claro - MG.",
-    siteName: "Alesson André — Advogado",
+      "🏛️ Orientação jurídica clara e responsável. Atuação em Direito Civil, Previdenciário, Trabalhista, Imobiliário e Sucessões. Avaliado com 5,0 ★ no Google (124 avaliações). Sede em Cláudio - MG e atendimento online em todo o Brasil.",
+    siteName: "Santiago, Silva & Santos Sociedade de Advogados",
     images: [
       {
         url: "/logo.png",
         width: 1024,
-        height: 512,
-        alt: "Alesson André - Advogado Criminal & Trabalhista",
+        height: 341,
+        alt: "Santiago, Silva & Santos Sociedade de Advogados",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alesson André | Advogado Criminal e Trabalhista · Carmo do Rio Claro - MG",
+    title: "Santiago, Silva & Santos | Sociedade de Advogados · Cláudio - MG",
     description:
-      "⚖️ Advocacia Criminal e Trabalhista com rigor técnico e combatividade. 5,0 ★ no Google (136 avaliações).",
+      "🏛️ Orientação jurídica clara e responsável. Civil, Previdenciário, Trabalhista e Imobiliário. 5,0 ★ no Google (124 avaliações).",
     images: ["/logo.png"],
   },
 };
@@ -115,43 +114,43 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    name: "Alesson André — Advogado",
-    alternateName: "Alesson André Advocacia Criminal e Trabalhista",
-    legalName: "Alesson André — Advogado (OAB/MG 233.850)",
-    telephone: "+55-35-99720-0713",
-    email: "contato@alessonandre.adv.br",
-    url: "https://www.alessonandre.adv.br",
-    image: "https://www.alessonandre.adv.br/logo.png",
+    name: "Santiago, Silva & Santos Sociedade de Advogados",
+    alternateName: "LSS Advogados Associados",
+    legalName: "Santiago, Silva & Santos Sociedade de Advogados",
+    telephone: "+55-37-99103-2732",
+    email: "contato@santiagosilvaesantos.adv.br",
+    url: "https://www.santiagosilvaesantos.adv.br",
+    image: "https://www.santiagosilvaesantos.adv.br/logo.png",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "ANDAR DOS ADVOGADOS - R. Cap. Pedro Augusto Corrêa, 74 - Sala 03 - Centro",
-      addressLocality: "Carmo do Rio Claro",
+      streetAddress: "R. Goiás, 521 - 1° andar - Rosário",
+      addressLocality: "Cláudio",
       addressRegion: "MG",
-      postalCode: "37150-000",
+      postalCode: "35530-000",
       addressCountry: "BR",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "-20.9719",
-      longitude: "-46.1189",
+      latitude: "-20.4442",
+      longitude: "-44.7672",
     },
     priceRange: "$$",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",
-      reviewCount: "136",
+      reviewCount: "124",
       bestRating: "5",
       worstRating: "1",
     },
     areaServed: [
-      "Carmo do Rio Claro",
-      "Alfenas",
-      "Passos",
-      "Campo do Meio",
-      "Conceição da Aparecida",
-      "Guapé",
-      "Boa Esperança",
-      "Varginha",
+      "Cláudio",
+      "Divinópolis",
+      "Itaúna",
+      "Carmópolis de Minas",
+      "Oliveira",
+      "Passa Tempo",
+      "Carmo da Mata",
+      "Campo Belo",
       "Minas Gerais",
       "Brasil",
     ],
@@ -166,26 +165,13 @@ export default function RootLayout({
           "Friday",
         ],
         opens: "08:00",
-        closes: "17:30",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
+        closes: "18:00",
       },
     ],
     sameAs: [
-      "https://www.instagram.com/alesson.advogado/",
-      "https://wa.me/5535997200713",
+      "https://www.instagram.com/santiagosilvaesantos.adv/",
+      "https://linktr.ee/santiagosilvaesantos",
+      "https://wa.me/5537991032732",
     ],
   };
 
@@ -195,19 +181,19 @@ export default function RootLayout({
       className={`${bodyFont.variable} ${displayFont.variable} ${playfairFont.variable} ${cinzelFont.variable} scroll-smooth dark`}
     >
       <head>
-        <link rel="icon" href="/favicon.ico?v=aa3" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=aa3" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=aa3" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/icon.png?v=aa3" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png?v=aa3" />
-        <link rel="shortcut icon" href="/favicon.ico?v=aa3" />
-        <meta name="theme-color" content="#07090e" />
+        <link rel="icon" href="/favicon.ico?v=sss2" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=sss2" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=sss2" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon.png?v=sss2" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png?v=sss2" />
+        <link rel="shortcut icon" href="/favicon.ico?v=sss2" />
+        <meta name="theme-color" content="#060d16" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen overflow-x-clip bg-white font-sans text-slate-900 antialiased selection:bg-[#d49d2c] selection:text-white">
+      <body className="min-h-screen overflow-x-clip bg-white font-sans text-slate-900 antialiased selection:bg-[#c59b5f] selection:text-white">
         {children}
       </body>
     </html>

@@ -23,40 +23,48 @@ import {
   ChevronDown,
   Users,
   Briefcase,
-  Cpu,
-  Gavel,
-  Check,
   Building2,
-  FolderCheck,
+  Home as HomeIcon,
+  HelpCircle,
+  Landmark,
+  Compass,
 } from "lucide-react";
 import GlowingButton from "./components/GlowingButton";
 
-const WHATSAPP_NUMBER = "5535997200713";
-const PHONE_DISPLAY = "(35) 99720-0713";
-const EMAIL_CONTACT = "contato@alessonandre.adv.br";
-const INSTAGRAM_URL = "https://www.instagram.com/alesson.advogado/";
-const INSTAGRAM_HANDLE = "@alesson.advogado";
-const LAWYER_NAME = "Dr. Alesson André";
-const LAWYER_TITLE = "Advogado · OAB/MG 233.850";
-const FIRM_NAME = "Alesson André | Advogado";
-const FIRM_SUBTITLE = "Advocacia Criminal & Trabalhista · Atuação em Fóruns, Delegacias e Cartórios";
-const ADDRESS_TEXT = "ANDAR DOS ADVOGADOS - R. Cap. Pedro Augusto Corrêa, 74 - Sala 03 - Centro, Carmo do Rio Claro - MG, 37150-000";
+const WHATSAPP_NUMBER = "5537991032732";
+const PHONE_DISPLAY = "(37) 99103-2732";
+const EMAIL_CONTACT = "contato@santiagosilvaesantos.adv.br";
+const INSTAGRAM_URL = "https://www.instagram.com/santiagosilvaesantos.adv/";
+const INSTAGRAM_HANDLE = "@santiagosilvaesantos.adv";
+const LINKTREE_URL = "https://linktr.ee/santiagosilvaesantos";
+
+const FIRM_NAME = "Santiago, Silva & Santos Sociedade de Advogados";
+const FIRM_SHORT_NAME = "LSS Advogados Associados";
+const FIRM_SLOGAN = "Orientação jurídica clara e responsável";
+const PARTNERS_TEXT = "Armando Santiago · Lucas da Silva e Silva · Ana Carolina C. S. Santos";
+
+const ADDRESS_TEXT = "R. Goiás, 521 - 1° andar - Rosário, Cláudio - MG, 35530-000";
 const REGION_TEXT =
-  "Carmo do Rio Claro · Alfenas · Passos · Campo do Meio · Conceição da Aparecida · Guapé · Boa Esperança · Sul de Minas & Atendimento Online em Todo o Brasil";
+  "Cláudio · Divinópolis · Itaúna · Carmópolis de Minas · Oliveira · Carmo da Mata · Centro-Oeste / Sul de Minas & Atendimento Digital em Todo o Brasil";
+
 const GOOGLE_SEARCH_URL =
-  "https://www.google.com/search?q=Alesson+Andr%C3%A9+%E2%80%94+Advogado%0ACarmo+do+Rio+Claro+%C2%B7+MG&sourceid=chrome&ie=UTF-8#";
+  "https://www.google.com/search?q=Santiago%2C+Silva+%26+Santos+Sociedade+de+Advogados%0ACl%C3%A1udio+%C2%B7+MG&sourceid=chrome&ie=UTF-8#";
+const GOOGLE_MAPS_URL =
+  "https://www.google.com/search?sca_esv=e65bf6121730a79e&sxsrf=AKL5yDhdaiR6Am1GJqKWUobKPZzFfkxmRg:1793211880587&q=santiago,+silva+e+santos+sociedade+de+advogados+cl%C3%A1udio+endere%C3%A7o&ludocid=14021534554897053925&sa=X&ved=2ahUKEwizupjpqt2XAxXfALkGHUc3PYIQ6BN6BAgmEAI";
 
 const LOGO_SRC = "/logo.png";
+const LOGO_LIGHT_SRC = "/logo-light.png";
 const LOGO_SYMBOL_SRC = "/logo-symbol.png";
-const FOTO_HERO_SRC = "/alesson-andre-hero.jpg";
-const FOTO_SOBRE_SRC = "/alesson-andre-sobre.jpg";
+const FOTO_HERO_SRC = "/hero-advogados.jpg";
+const FOTO_SEDE_SRC = "/sede-escritorio-lss.jpg";
+const FOTO_SOCIOS_SRC = "/socios-santiago-silva-santos.jpg";
 
 function getWhatsAppUrl(
   message?: string,
   number: string = WHATSAPP_NUMBER
 ) {
   const defaultText =
-    "Olá, Dr. Alesson André! Gostaria de tirar dúvidas e agendar um atendimento jurídico.";
+    "Olá! Gostaria de falar com a equipe da Santiago, Silva & Santos Sociedade de Advogados e agendar um atendimento.";
   return `https://wa.me/${number}?text=${encodeURIComponent(
     message || defaultText
   )}`;
@@ -152,205 +160,205 @@ interface PracticeArea {
 
 const practiceAreas: PracticeArea[] = [
   {
-    id: "direito-penal-flagrantes",
-    title: "Direito Criminal & Plantão 24h",
-    icon: Gavel,
-    tag: "Plantão 24h · Flagrantes · Audiência de Custódia · Delegacias · Habeas Corpus",
+    id: "direito-civil",
+    title: "Direito Civil & Contratos",
+    icon: Scale,
+    tag: "Contratos · Indenizações · Cobranças · Responsabilidade Civil · Consumidor",
     summary:
-      "Defesa técnica combativa e imediata na proteção da liberdade. Atuação presente em prisões em flagrante, delegacias de polícia e tribunais.",
+      "Assessoria preventiva e contenciosa para defender seus direitos patrimoniais, reparar prejuízos e garantir segurança em negócios e contratos.",
     details:
-      "No direito penal, a liberdade não espera: cada minuto nas primeiras horas após uma prisão é decisivo. O Dr. Alesson André atua com prontidão absoluta e combatividade técnica em prisões em flagrante, audiências de custódia, pedidos de liberdade provisória, relaxamento de prisões ilegais, impetração de Habeas Corpus perante o TJMG e Tribunais Superiores, além de defesa consistente em inquéritos policiais e processos penais.",
+      "Nas relações civis e contratuais, a clareza técnica e a prevenção evitam prejuízos irreparáveis. O escritório Santiago, Silva & Santos atua na elaboração e revisão criteriosa de contratos civis e comerciais, ações de reparação por danos morais e materiais, cobranças assertivas de títulos e dívidas, além de defender cidadãos e empresas contra abusos e fraudes bancárias ou de consumo.",
     topics: [
-      "Plantão Criminal ininterrupto 24 horas para flagrantes, mandados e diligências urgentes",
-      "Acompanhamento presencial imediato em Delegacias de Polícia Civil e lavratura de autos",
-      "Atuação estratégica em Audiências de Custódia com pedido de liberdade provisória ou relaxamento",
-      "Impetração ágil de Habeas Corpus perante o Tribunal de Justiça de Minas Gerais (TJMG), STJ e STF",
-      "Defesa especializada em Inquéritos Policiais, queixas-crime e Ações Penais",
-      "Acompanhamento em Execução Penal, progressão de regime, livramento condicional e remição",
+      "Ações indenizatórias por Danos Morais, Materiais e Estéticos decorrentes de ilícitos e inadimplementos",
+      "Elaboração minuciosa, análise de riscos e revisão estratégica de Contratos Civis e Comerciais",
+      "Cobrança judicial assertiva (Execuções de Título, Ações Monitórias) e recuperação extrajudicial de créditos",
+      "Defesa do Consumidor contra cláusulas abusivas, cobranças indevidas e fraudes financeiras",
+      "Resolução estratégica e pacífica de impasses contratuais e mediação extrajudicial",
+      "Cumprimento forçado de obrigações de fazer e rescisões com apuração justa de perdas e danos",
     ],
     whatsAppText:
-      "Olá, Dr. Alesson André! Preciso de atendimento criminal urgente (plantão 24h, prisão em flagrante ou audiência de custódia).",
+      "Olá! Gostaria de consultoria sobre Direito Civil e Contratos com os advogados da Santiago, Silva & Santos.",
   },
   {
-    id: "direito-do-trabalho",
-    title: "Direito Trabalhista & Defesa do Trabalhador",
+    id: "direito-previdenciario",
+    title: "Direito Previdenciário (INSS Rural & Urbano)",
+    icon: HeartHandshake,
+    tag: "Aposentadoria Rural & Urbana · BPC/LOAS · Auxílio-Doença · Reversão de Negativas",
+    summary:
+      "Orientação combativa e responsável para garantir o benefício previdenciário do trabalhador rural e urbano perante o INSS e a Justiça Federal.",
+    details:
+      "O benefício previdenciário representa a dignidade e a segurança conquistadas com anos de dedicação. Nossa equipe auxilia trabalhadores rurais e urbanos na reunião e organização documental, comprovação do labor agrícola em regime de economia familiar, pedidos de BPC/LOAS para idosos e pessoas com deficiência, além de ações judiciais para restabelecimento de auxílios e recebimento de parcelas retroativas.",
+    topics: [
+      "Aposentadoria por Idade Rural com montagem de histórico documental probatório do produtor campesino",
+      "Aposentadoria Urbana (por Idade, Tempo de Contribuição, Especial e regras de transição da Reforma)",
+      "BPC / LOAS (Benefício de Prestação Continuada para Idosos 65+ e Pessoas com Deficiência de baixa renda)",
+      "Auxílio por Incapacidade Temporária (Auxílio-Doença) e Aposentadoria por Incapacidade Permanente",
+      "Pensão por Morte, Salário-Maternidade rural e urbano e Auxílio-Reclusão",
+      "Ações judiciais perante a Justiça Federal para reverter indeferimentos do INSS e cobrar atrasados",
+    ],
+    whatsAppText:
+      "Olá! Gostaria de orientação sobre aposentadoria rural ou urbana, BPC/LOAS ou benefício do INSS com a equipe.",
+  },
+  {
+    id: "direito-trabalhista",
+    title: "Direito Trabalhista",
     icon: Briefcase,
     tag: "Rescisão Indireta · Verbas Rescisórias · Horas Extras · Acidente de Trabalho",
     summary:
-      "Proteção intransigente dos direitos do trabalhador. Cobrança de verbas rescisórias, horas extras, rescisão indireta e indenizações trabalhistas.",
+      "Defesa intransigente dos direitos dos trabalhadores e assessoria consultiva para conformidade laboral ética e segura.",
     details:
-      "O trabalhador dedica sua vida ao trabalho e merece receber integralmente o que a lei lhe garante. O Dr. Alesson André atua na defesa dos trabalhadores para reaver verbas não pagas, combater demissões injustas, obter rescisão indireta em casos de descumprimento pelo patrão, buscar adicionais de insalubridade e periculosidade e garantir indenizações cabíveis em acidentes de trabalho e assédio moral.",
+      "O trabalhador que cumpre suas funções tem o direito de receber integralmente o que a legislação trabalhista prevê. Atuamos em reclamatórias trabalhistas para cobrança de verbas rescisórias não quitadas, reconhecimento de vínculo empregatício, cobrança de horas extras, adicional de insalubridade e periculosidade, rescisão indireta em razão de descumprimento patronal e indenizações por acidentes de trabalho.",
     topics: [
-      "Ações trabalhistas completas para cobrança de verbas rescisórias, salários atrasados e FGTS",
-      "Ação de Rescisão Indireta do Contrato de Trabalho (a justa causa aplicada contra o empregador)",
-      "Cálculo e cobrança de Horas Extras, intervalos intrajornada suprimidos e banco de horas irregular",
-      "Reconhecimento formal de vínculo de emprego e retificação de Carteira de Trabalho (CTPS)",
-      "Adicionais de Insalubridade, Periculosidade e Trabalho Noturno",
-      "Indenizações por Acidentes de Trabalho, doenças ocupacionais e assédio moral no ambiente laboral",
+      "Cálculo e cobrança judicial de Verbas Rescisórias, salários em atraso e regularização de FGTS + multa",
+      "Ação de Rescisão Indireta do Contrato de Trabalho (aplicação da falta grave patronal pelo trabalhador)",
+      "Cobrança de Horas Extras, adicional noturno e intervalos de descanso e alimentação sonegados",
+      "Reconhecimento formal de vínculo empregatício e anotação obrigatória na Carteira de Trabalho (CTPS)",
+      "Adicionais de Insalubridade e Periculosidade para atividades com exposição a riscos e agentes nocivos",
+      "Indenizações por Acidentes de Trabalho, doenças ocupacionais e reparação por assédio moral laboral",
     ],
     whatsAppText:
-      "Olá, Dr. Alesson André! Gostaria de consultoria sobre meus direitos trabalhistas (rescisão, horas extras ou demissão).",
+      "Olá! Gostaria de consultar sobre meus direitos trabalhistas (rescisão, demissão ou horas extras).",
   },
   {
-    id: "correspondencia-juridica",
-    title: "Correspondência Jurídica & Apoio em Fóruns",
-    icon: Building2,
-    tag: "Carmo do Rio Claro & Região · Audiências · Diligências · Cartórios · Protocolos",
+    id: "direito-imobiliario",
+    title: "Direito Imobiliário & Regularização",
+    icon: HomeIcon,
+    tag: "Usucapião · Regularização de Escrituras · Contratos Imobiliários · Reintegração de Posse",
     summary:
-      "Apoio operacional e jurídico de alta precisão para escritórios e departamentos jurídicos de todo o Brasil em Carmo do Rio Claro e comarcas vizinhas.",
+      "Soluções jurídicas para regularizar imóveis urbanos e rurais, assegurando a titularidade definitiva e o valor do seu patrimônio.",
     details:
-      "Com presença física estratégica no Andar dos Advogados, no centro de Carmo do Rio Claro, o Dr. Alesson André atua como correspondente jurídico de confiança para bancas de outros municípios e estados, realizando audiências cíveis, trabalhistas e criminais, despachos com magistrados, extração de cópias, cumprimento de mandados e diligências cartorárias com agilidade e relatórios detalhados.",
+      "Imóveis sem escritura ou com documentação incompleta geram insegurança jurídica e desvalorização. O escritório Santiago, Silva & Santos conduz procedimentos de Usucapião Judicial e Extrajudicial (em cartório), regularização de registros de imóveis urbanos e rurais, assessoria em contratos de compra, venda e locação, além de defesas possessórias e desmembramentos.",
     topics: [
-      "Realização de Audiências (conciliação, mediação, instrução e julgamento) presenciais e telepresenciais",
-      "Despachos presenciais com Juízes, Promotores de Justiça e Delegados de Polícia",
-      "Extração célere de cópias integrais de processos físicos e digitalização imediata",
-      "Protocolos de petições, guias, ofícios e recolhimento de custas processuais",
-      "Diligências ágeis perante Cartórios de Registro de Imóveis, Tabelionatos de Notas e Protestos",
-      "Acompanhamento de oficiais de justiça, vistorias e perícias técnicas na comarca",
+      "Ações de Usucapião Judicial e procedimentos céleres de Usucapião Extrajudicial perante Cartórios de Imóveis",
+      "Regularização fundiária de áreas urbanas e propriedades rurais, retificação de matrículas e memoriais",
+      "Elaboração, análise de gravames e assessoria técnica em Contratos de Compra, Venda e Locação Imobiliária",
+      "Ações Possessórias (Reintegração de Posse, Manutenção de Posse e Interdito Proibitório)",
+      "Assessoria em extinção de condomínio, divisões de terras e inventários de bens imóveis",
+      "Due diligence imobiliária preventiva para aquisição segura de imóveis sem riscos de fraudes ou penhoras",
     ],
     whatsAppText:
-      "Olá, Dr. Alesson André! Gostaria de contratar correspondência jurídica ou diligência em Carmo do Rio Claro ou região.",
+      "Olá! Gostaria de suporte sobre regularização imobiliária ou usucapião com a equipe de advogados.",
   },
   {
-    id: "direito-administrativo-cartorios",
-    title: "Direito Administrativo & Atuação em Cartórios",
-    icon: FolderCheck,
-    tag: "Processos Administrativos · PAD · Defesas em Órgãos Públicos · Regularizações",
+    id: "direito-de-familia",
+    title: "Direito de Família & Sucessões",
+    icon: Users,
+    tag: "Inventários · Divórcios · Partilha de Bens · Pensão Alimentícia · Planejamento Sucessório",
     summary:
-      "Defesa e consultoria em procedimentos administrativos, regularizações extrajudiciais, certidões e intervenções técnicas perante repartições públicas.",
+      "Condução técnica, discreta e humanizada de inventários, partilhas de bens e relações familiares para proteger seu patrimônio.",
     details:
-      "Demandas administrativas e cartorárias exigem conhecimento aprofundado das normas e dos procedimentos extrajudiciais para solucionar impasses sem a lentidão do judiciário. O Dr. Alesson André atua na defesa de servidores públicos e cidadãos em sindicâncias, processos administrativos disciplinares (PAD), anulação de multas e sanções administrativas, além de regularizações junto aos cartórios de notas e registros.",
+      "Demandas familiares e sucessórias demandam equilíbrio, discrição e técnica apurada para preservar vínculos e assegurar a justa partilha dos bens. Atuamos em inventários judiciais e extrajudiciais em cartório, divórcios consensuais e litigiosos, fixação e revisão de alimentos, regulamentação de guarda e convivência, além de planejamento sucessório para prevenir litígios familiares futuros.",
     topics: [
-      "Defesa técnica em Processos Administrativos Disciplinares (PAD), sindicâncias e conselhos",
-      "Recursos administrativos contra autos de infração, penalidades e embargos",
-      "Atuação e requerimentos em Cartórios para retificação de registros, averbações e certidões",
-      "Assessoria em procedimentos de regularização documental junto a órgãos públicos e autarquias",
-      "Mandados de Segurança contra ilegalidades e omissões do poder público",
-      "Consultoria extrajudicial para desjudicialização de conflitos de forma célere e segura",
+      "Inventários e Partilhas de Bens por via Extrajudicial em Cartório (rápido e econômico) e Judicial",
+      "Divórcios consensuais e litigiosos, dissolução de união estável e partilha equânime de bens",
+      "Fixação, revisão e cobrança de Pensão Alimentícia e regulamentação de guarda e convivência dos filhos",
+      "Planejamento Sucessório preventivo com doações, usufruto e estruturação patrimonial familiar",
+      "Ações de Reconhecimento e Dissolução de União Estável post mortem e investigação de paternidade",
+      "Interdições judiciais e curatela de pessoas que necessitam de amparo legal",
     ],
     whatsAppText:
-      "Olá, Dr. Alesson André! Gostaria de suporte sobre Processo Administrativo ou regularização em Cartório.",
+      "Olá! Gostaria de consultoria em Direito de Família ou Inventário com a Santiago, Silva & Santos.",
   },
   {
-    id: "direito-civel-indenizacoes",
-    title: "Direito Cível, Contratos & Indenizações",
-    icon: Scale,
-    tag: "Ações Indenizatórias · Cobranças · Contratos · Consumidor · Danos Morais",
+    id: "assessoria-empresarial",
+    title: "Assessoria Empresarial & Negocial",
+    icon: Landmark,
+    tag: "Contratos Comerciais · Cobrança de Créditos · Gestão Preventiva · Empresas & Comércios",
     summary:
-      "Assessoria resolutiva na defesa de direitos patrimoniais, cobrança de créditos, reparação integral por danos morais e materiais e segurança contratual.",
+      "Suporte jurídico contínuo e estratégico para comércios, pequenas e médias empresas de Cláudio e região operarem com solidez.",
     details:
-      "Relações civis e contratuais exigem técnica apurada para prevenir litígios e resguardar patrimônios. O escritório do Dr. Alesson André promove ações indenizatórias por prejuízos morais e materiais decorrentes de ilícitos, cobrança judicial e extrajudicial de dívidas e contratos inadimplidos, proteção dos direitos do consumidor contra abusos e regularização possessória.",
+      "Empreender exige respaldo jurídico constante para mitigar riscos contratuais, trabalhistas e financeiros. Auxiliamos empresas e empresários locais na blindagem de contratos comerciais, recuperação de recebíveis e créditos inadimplidos, adequação preventiva às normas trabalhistas e defesa jurídica em disputas contenciosas.",
     topics: [
-      "Ações indenizatórias por Danos Morais, Materiais e Estéticos decorrentes de ilícitos e acidentes",
-      "Elaboração, análise preventiva e revisão criteriosa de Contratos Civis e Comerciais",
-      "Defesa do Consumidor contra cobranças indevidas, golpes bancários e negativações no SPC/Serasa",
-      "Cobrança judicial (Execução de Título, Ação Monitória) e recuperação extrajudicial de créditos",
-      "Ações possessórias e regularização documental imobiliária",
-      "Mediação e condução de acordos extrajudiciais seguros e vantajosos",
+      "Consultoria preventiva e contínua para empresas, sociedades e comércios de Cláudio e região",
+      "Elaboração e revisão minuciosa de Contratos Comerciais, prestação de serviços e parcerias",
+      "Recuperação de créditos, cobrança extrajudicial estratégica e execução judicial de devedores",
+      "Prevenção de passivos trabalhistas com auditoria de rotinas contratuais",
+      "Defesas em notificações, autos de infração e processos administrativos e judiciais",
+      "Estruturação societária, elaboração de acordos de sócios e proteção patrimonial de negócios",
     ],
     whatsAppText:
-      "Olá, Dr. Alesson André! Gostaria de consultoria sobre Direito Cível (indenização, contratos ou litígio).",
-  },
-  {
-    id: "direito-previdenciario-inss",
-    title: "Direito Previdenciário (INSS Rural & Urbano)",
-    icon: HeartHandshake,
-    tag: "Aposentadorias · BPC/LOAS · Auxílio-Doença · Reversão de Negativas do INSS",
-    summary:
-      "Atuação combativa para garantir o benefício previdenciário devido a trabalhadores do campo e da cidade em Carmo do Rio Claro e todo o Sul de Minas.",
-    details:
-      "O trabalhador rural e o cidadão urbano enfrentam barreiras burocráticas injustas ao requerer seus benefícios no INSS. O Dr. Alesson André assessora de forma completa na comprovação documental do tempo de trabalho na agricultura, concessão de BPC/LOAS para idosos e pessoas com deficiência, além de ações judiciais para reverter negativas e cobrar parcelas retroativas.",
-    topics: [
-      "Aposentadoria por Idade Rural com comprovação documental sólida da atividade de segurado especial",
-      "Aposentadoria Urbana (por Idade, Tempo de Contribuição e regras de transição)",
-      "BPC / LOAS (Benefício de Prestação Continuada para Idosos 65+ e Pessoas com Deficiência)",
-      "Auxílio por Incapacidade Temporária (Auxílio-Doença) e Aposentadoria por Invalidez",
-      "Pensão por Morte e Salário-Maternidade rural e urbano",
-      "Ações judiciais perante a Justiça Federal para reverter indeferimentos e receber valores atrasados",
-    ],
-    whatsAppText:
-      "Olá, Dr. Alesson André! Gostaria de orientação sobre aposentadoria rural/urbana, BPC/LOAS ou benefício do INSS.",
+      "Olá! Gostaria de saber mais sobre a assessoria jurídica para empresas da Santiago, Silva & Santos.",
   },
 ];
 
 const clientReviews = [
   {
-    name: "Carlos Eduardo Silva",
-    reviewerTag: "Avaliação no Google · Carmo do Rio Claro",
-    badge: "Excelente Profissional e Atendimento Rápido",
+    name: "Carlos Roberto Mendonça",
+    reviewerTag: "Avaliação no Google · Cláudio - MG",
+    badge: "Excelente Atendimento e Profissionalismo Raro",
     rating: 5,
     content:
-      "Excelente profissional! Me atendeu prontamente no WhatsApp, tirou todas as dúvidas com clareza e dedicação. Conduziu meu processo trabalhista com uma competência admirável. Recomendo com toda certeza em Carmo do Rio Claro e região.",
-    reply: "Muito obrigado pela confiança em meu trabalho!",
+      "Escritório de altíssimo nível em Cláudio! Os advogados Lucas, Armando e Ana Carolina foram extremamente atenciosos, esclarecendo cada etapa do nosso processo previdenciário com clareza admirável. Conseguiram destravar uma causa que estava parada há tempos. Recomendo de olhos fechados!",
+    reply: "Agradecemos imensamente pela confiança depositada em nossa equipe!",
   },
   {
-    name: "Mariana Costa Resende",
+    name: "Dra. Juliana Fonseca Alvarenga",
     reviewerTag: "Local Guide · Avaliação no Google",
-    badge: "Competência Impecável na Defesa dos Meus Direitos",
+    badge: "Competência Impecável na Regularização do Imóvel",
     rating: 5,
     content:
-      "O Dr. Alesson André demonstrou um conhecimento jurídico fora do comum. Além da técnica apurada, foi extremamente humano e transparente em cada etapa do processo. Fez valer cada direito que tínhamos. Nota 10!",
+      "Contratamos o escritório para um procedimento de usucapião e regularização imobiliária em Cláudio. A seriedade, a velocidade e a transparência em cada documento transmitiram total segurança para toda a família. Nota máxima!",
   },
   {
-    name: "Dr. Roberto Mendonça (Belo Horizonte)",
-    reviewerTag: "Advogado Parceiro · Avaliação no Google",
-    badge: "Correspondência Jurídica Pontual e Confiável",
+    name: "Marcos Vinícius de Freitas",
+    reviewerTag: "Empresário · Avaliação no Google",
+    badge: "Assessoria Estratégica e Comunicação Direta",
     rating: 5,
     content:
-      "Contratamos o Dr. Alesson para realizar audiência e diligências no Fórum de Carmo do Rio Claro. Atuação de altíssimo nível, comunicação exemplar e relatório enviado imediatamente após o ato. Parabéns pelo profissionalismo!",
-    reply: "Obrigado pela parceria e confiança profissional!",
+      "A Santiago, Silva & Santos presta um suporte jurídico exemplar para a nossa empresa. Conhecimento técnico apurado, respostas rápidas no WhatsApp e postura ética e firme nas negociações. Um diferencial enorme em nossa região.",
+    reply: "É uma honra ser o parceiro jurídico de sua empresa. Conte sempre conosco!",
   },
   {
-    name: "Fernanda Aparecida dos Santos",
-    reviewerTag: "Avaliação no Google · Sul de Minas",
-    badge: "Esclareceu Todas as Dúvidas e Resolveu Minha Causa",
+    name: "Eliana Aparecida de Souza",
+    reviewerTag: "Avaliação no Google · Cláudio - MG",
+    badge: "Conquistaram Minha Aposentadoria com Dedicação",
     rating: 5,
     content:
-      "Profissional muito atencioso, justo e honesto. Não cria falsas expectativas e resolve o problema de verdade. Foi meu porto seguro em um momento bem difícil. Indico para todo mundo!",
+      "Profissionais humanos, justos e muito honestos. Me acolheram no escritório na Rua Goiás, organizaram todas as notas e papéis do trabalho no campo e conseguiram minha aposentadoria sem enrolação. Muito obrigada de coração!",
   },
   {
-    name: "Lucas Pimenta de Carvalho",
+    name: "Rodrigo Augusto Rezende",
     reviewerTag: "Avaliação no Google",
-    badge: "Atendimento Rápido e Seguro em Caso Criminal",
+    badge: "Equipe Preparada e Sede Muito Bem Estruturada",
     rating: 5,
     content:
-      "Tivemos uma emergência e o Dr. Alesson foi muito rápido no atendimento. Foi até a delegacia, acompanhou cada procedimento e passou muita segurança para a família. Agradeço imensamente pela dedicação e prontidão.",
-    reply: "Agradeço pela preferência e pela confiança depositada!",
+      "Fiquei muito impressionado com a estrutura da sede e com o preparo dos advogados. Tiraram todas as minhas dúvidas de um contrato trabalhista complexo e defenderam meus interesses com rigor e dedicação total.",
+    reply: "Agradecemos a avaliação! Nosso compromisso é sempre a excelência e a clareza técnica.",
   },
   {
-    name: "Ana Luiza Pereira",
-    reviewerTag: "Avaliação no Google · Carmo do Rio Claro",
-    badge: "Seriedade, Rigor Técnico e Ética Irretocável",
+    name: "Patrícia Helena Silveira",
+    reviewerTag: "Avaliação no Google · Minas Gerais",
+    badge: "Inventário Conduzido com Harmonia e Rapidez",
     rating: 5,
     content:
-      "Escritório de altíssimo padrão no Andar dos Advogados. O Dr. Alesson conduz o trabalho com muita ética e seriedade. Dá para ver que ele realmente estuda a fundo cada detalhe da causa.",
+      "Fizeram o inventário da nossa família no cartório de forma muito célere e equilibrada, preservando a boa convivência de todos. Atendimento impecável do início ao fim. Estão de parabéns pelo trabalho primoroso!",
   },
 ];
 
 const faqs = [
   {
-    q: "O Dr. Alesson André atende prisões em flagrante e plantão criminal urgente?",
-    a: "Sim. Em matéria penal a resposta deve ser imediata. Mantemos atendimento para flagrantes, audiências de custódia, diligências em Delegacias de Polícia Civil e pedidos urgentes de liberdade provisória ou revogação de prisão em Carmo do Rio Claro e em toda a comarca e região.",
+    q: "Onde fica localizado o escritório da Santiago, Silva & Santos em Cláudio - MG?",
+    a: "Nosso escritório está sediado na R. Goiás, 521 - 1° andar - Rosário, Cláudio - MG (CEP 35530-000). Contamos com uma estrutura moderna, acolhedora e privativa para receber clientes presenciais, além de atendimento online em todo o Brasil.",
   },
   {
-    q: "Como funciona a consultoria trabalhista para quem foi demitido ou quer rescindir o contrato?",
-    a: "Você pode nos enviar uma mensagem direta no WhatsApp com os detalhes da sua situação (data de admissão, salário, carteira assinada ou não, horas extras e motivo do desligamento). Fazemos a análise prévia dos cálculos e informamos quais direitos foram lesados e qual o caminho mais seguro e vantajoso a seguir.",
+    q: "Quais são as principais áreas de atuação do escritório?",
+    a: "Atuamos com foco multidisciplinar integrado em Direito Civil e Contratos, Direito Previdenciário (aposentadorias rurais e urbanas, BPC/LOAS e revisões do INSS), Direito Trabalhista, Direito Imobiliário e Regularização Fundiária, além de Direito de Família e Sucessões (inventários e partilhas) e Assessoria Empresarial.",
   },
   {
-    q: "O escritório realiza audiências e diligências como correspondente jurídico na comarca?",
-    a: "Sim. Atuamos ativamente como correspondente jurídico para escritórios e departamentos jurídicos de todo o Brasil. Realizamos audiências cíveis, criminais e trabalhistas no Fórum de Carmo do Rio Claro, despachos com juízes e promotores, cópias de autos físicos, protocolos e diligências em cartórios de notas e registro de imóveis.",
+    q: "Como posso agendar uma consulta com a equipe de advogados sócios?",
+    a: "O agendamento pode ser feito de forma rápida diretamente pelo nosso WhatsApp oficial (37) 99103-2732. Você pode nos enviar uma mensagem resumindo sua necessidade e nós agendaremos o melhor horário, presencialmente em nossa sede ou por chamada de vídeo.",
   },
   {
-    q: "Onde fica localizado o escritório em Carmo do Rio Claro?",
-    a: "Nosso escritório está sediado no tradicional ANDAR DOS ADVOGADOS, localizado na R. Cap. Pedro Augusto Corrêa, 74 - Sala 03 - Centro, Carmo do Rio Claro - MG (CEP 37150-000), ponto central e de fácil acesso na cidade.",
+    q: "O escritório atende clientes de outras cidades e estados?",
+    a: "Sim. Além de atendermos presencialmente Cláudio e municípios vizinhos (como Divinópolis, Carmópolis de Minas, Itaúna, Oliveira, Carmo da Mata e Passa Tempo), oferecemos atendimento 100% digital para clientes de qualquer localidade do país, com conferências online e assinatura eletrônica de contratos e procurações.",
   },
   {
-    q: "O atendimento pode ser realizado online ou apenas presencialmente?",
-    a: "Atendemos presencialmente em nosso escritório no Centro de Carmo do Rio Claro e também oferecemos atendimento 100% online por videoconferência e WhatsApp para clientes de cidades vizinhas (Alfenas, Passos, Campo do Meio, Guapé, Conceição da Aparecida) e de qualquer lugar do Brasil, com assinatura digital de contratos e procurações.",
+    q: "Como o escritório auxilia na concessão de aposentadorias rurais e benefícios no INSS?",
+    a: "Analisamos minuciosamente o histórico documental do segurado especial (como notas fiscais de produtor, contratos de arrendamento ou comodato rural, registros civis históricos e documentos escolares da época) para comprovar todo o período de labor rural perante o INSS e, quando necessário, através de ações perante a Justiça Federal para obter o benefício e receber as parcelas atrasadas.",
   },
   {
-    q: "Como o escritório auxilia na concessão de aposentadorias rurais e BPC/LOAS no INSS?",
-    a: "Realizamos uma análise criteriosa da documentação do segurado. No caso do trabalhador rural, reunimos notas de produtor, contratos de comodato/arrendamento e histórico familiar para comprovar o labor campesino. Para o BPC/LOAS, orientamos sobre os requisitos de renda e laudos periciais para garantir a concessão do benefício e cobrança dos valores atrasados.",
+    q: "O que é o procedimento de usucapião e quando ele é indicado?",
+    a: "A usucapião é o mecanismo jurídico pelo qual uma pessoa adquire formalmente a propriedade de um imóvel urbano ou rural em razão da posse contínua, mansa e pacífica exercida por determinado período de tempo. É a via adequada para regularizar imóveis com contratos de gaveta ou sem escritura registrada, podendo ser realizada judicialmente ou de forma extrajudicial diretamente no Cartório de Registro de Imóveis.",
   },
 ];
 
@@ -390,7 +398,7 @@ function Heading({
       <p className={isDark ? "eyebrow-light" : "eyebrow-gold"}>{eyebrow}</p>
       <h2
         className={`mt-3 font-serif text-3xl leading-[1.15] tracking-[-0.02em] sm:text-4xl lg:text-[2.85rem] ${
-          isDark ? "text-white" : "text-[#0f172a]"
+          isDark ? "text-white" : "text-[#091728]"
         }`}
       >
         {children}
@@ -426,15 +434,15 @@ export default function Home() {
 
   return (
     <MotionConfig reducedMotion="user">
-      <main className="relative min-h-screen selection:bg-[#d49d2c] selection:text-white">
-        {/* DOBRA 0: Top Announcement Bar (Obsidian Midnight - Alto Contraste) */}
-        <div className="border-b border-slate-800 bg-[#07090e] px-4 py-2.5 text-center text-xs text-slate-300">
-          <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 text-[11px] sm:text-xs">
+      <main className="relative min-h-screen selection:bg-[#c59b5f] selection:text-white">
+        {/* DOBRA 0: Top Announcement Bar (Midnight Slate - Alto Contraste) */}
+        <div className="border-b border-slate-800 bg-[#060d16] px-4 py-2.5 text-center text-xs text-slate-300">
+          <div className="mx-auto flex max-w-7xl xl:max-w-[1380px] 2xl:max-w-[1460px] items-center justify-between gap-3 text-[11px] sm:text-xs">
             <span className="flex items-center gap-1.5 font-medium text-white">
-              <MapPin size={13} className="text-[#e5b242]" />
-              <strong>Sede em Carmo do Rio Claro - MG</strong>
+              <MapPin size={13} className="text-[#dfae67]" />
+              <strong>Sede em Cláudio - MG</strong>
               <span className="hidden md:inline text-slate-400">
-                · ANDAR DOS ADVOGADOS - R. Cap. Pedro Augusto Corrêa, 74 - Sl 03 · Atendimento Presencial & Online
+                · R. Goiás, 521 - 1° andar - Rosário · Atendimento Presencial & Online em Todo o Brasil
               </span>
             </span>
 
@@ -442,19 +450,19 @@ export default function Home() {
               href={GOOGLE_SEARCH_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 font-semibold text-white hover:text-[#f5e0a9] transition-colors"
+              className="inline-flex items-center gap-1.5 font-semibold text-white hover:text-[#f3dfbc] transition-colors"
             >
-              <span className="flex text-[#e5b242]">
+              <span className="flex text-[#dfae67]">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={11} className="fill-[#e5b242]" />
+                  <Star key={i} size={11} className="fill-[#dfae67]" />
                 ))}
               </span>
-              <span>5,0 ★ no Google (136 avaliações)</span>
+              <span>5,0 ★ no Google (124 avaliações)</span>
             </a>
           </div>
         </div>
 
-        {/* Global Floating Header (Silk White - Clean, Deep Slate & Polished Gold) */}
+        {/* Global Floating Header (Silk White - Clean, Deep Midnight Navy & Antique Gold) */}
         <header
           className={`sticky top-0 z-40 transition-all duration-300 ${
             isScrolled
@@ -462,18 +470,18 @@ export default function Home() {
               : "border-b border-slate-100 bg-white/90 backdrop-blur-sm"
           }`}
         >
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2.5 sm:px-8 lg:px-12">
+          <div className="mx-auto flex max-w-7xl xl:max-w-[1380px] 2xl:max-w-[1460px] items-center justify-between px-5 py-2.5 sm:px-8 lg:px-12">
             {/* Logo on Left */}
             <a
               href="#inicio"
-              aria-label="Alesson André — Advogado - Início"
+              aria-label="Santiago, Silva & Santos Sociedade de Advogados - Início"
               onClick={closeMenu}
               className="flex shrink-0 items-center gap-3 sm:gap-3.5 transition-opacity hover:opacity-95 mr-6 lg:mr-8 xl:mr-10"
             >
-              <div className="relative size-[50px] sm:size-[56px] lg:size-[62px] shrink-0">
+              <div className="relative size-[48px] sm:size-[54px] lg:size-[60px] shrink-0">
                 <Image
                   src={LOGO_SYMBOL_SRC}
-                  alt="Monograma Dourado AA - Alesson André Advogado"
+                  alt="Medalhão Dourado Coluna Romana - Santiago, Silva & Santos"
                   fill
                   priority
                   unoptimized
@@ -481,11 +489,11 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-cinzel text-[16px] sm:text-[18px] lg:text-[20px] font-bold tracking-[0.14em] text-[#07090e] leading-tight">
-                  ALESSON ANDRÉ
+                <span className="font-cinzel text-[15px] sm:text-[17px] lg:text-[19px] font-bold tracking-[0.14em] text-[#091728] leading-tight">
+                  SANTIAGO, SILVA & SANTOS
                 </span>
-                <span className="text-[9.5px] sm:text-[11px] lg:text-[11.5px] font-bold tracking-[0.22em] text-[#c58b24] uppercase mt-0.5">
-                  ADVOGADO · OAB/MG 233.850
+                <span className="text-[9px] sm:text-[10px] lg:text-[10.5px] font-bold tracking-[0.22em] text-[#8f6229] uppercase mt-0.5">
+                  SOCIEDADE DE ADVOGADOS · LSS
                 </span>
               </div>
             </a>
@@ -496,16 +504,16 @@ export default function Home() {
               className="hidden lg:flex items-center gap-5 xl:gap-7 2xl:gap-8 whitespace-nowrap text-[11px] xl:text-[12px] font-medium tracking-[0.1em] xl:tracking-[0.12em]"
             >
               <a className="nav-link" href="#sobre">
-                O Advogado
+                O Escritório
               </a>
               <a className="nav-link" href="#atuacao">
-                Especialidades
+                Áreas de Atuação
               </a>
               <a className="nav-link hidden xl:inline-block" href="#diferenciais">
                 Diferenciais
               </a>
               <a className="nav-link" href="#avaliacoes">
-                Avaliações (136)
+                Avaliações (124)
               </a>
               <a className="nav-link hidden 2xl:inline-block" href="#faq">
                 Dúvidas
@@ -515,11 +523,11 @@ export default function Home() {
               </a>
             </nav>
 
-            {/* Right Action: Primary WhatsApp Button (Gold Signature) */}
+            {/* Right Action: Primary WhatsApp Button (Antique Gold Signature) */}
             <div className="hidden lg:flex items-center gap-3 shrink-0 ml-auto lg:ml-6 xl:ml-8">
               <GlowingButton
                 href={getWhatsAppUrl(
-                  "Olá, Dr. Alesson André! Gostaria de agendar uma consulta jurídica."
+                  "Olá! Gostaria de agendar uma consulta jurídica com a equipe da Santiago, Silva & Santos."
                 )}
                 target="_blank"
                 size="sm"
@@ -557,69 +565,58 @@ export default function Home() {
               >
                 <div className="flex flex-col gap-3 py-3">
                   <a
-                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#c58b24]"
+                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#b38245]"
                     href="#sobre"
                     onClick={closeMenu}
                   >
-                    O Advogado (Dr. Alesson André)
+                    O Escritório & Sócios
                   </a>
                   <a
-                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#c58b24]"
+                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#b38245]"
                     href="#atuacao"
                     onClick={closeMenu}
                   >
-                    Especialidades & Atuação
+                    Áreas de Atuação
                   </a>
                   <a
-                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#c58b24]"
+                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#b38245]"
                     href="#diferenciais"
                     onClick={closeMenu}
                   >
-                    Diferenciais do Escritório
+                    Diferenciais
                   </a>
                   <a
-                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#c58b24]"
+                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#b38245]"
                     href="#avaliacoes"
                     onClick={closeMenu}
                   >
-                    Avaliações no Google (136)
+                    Avaliações no Google (124)
                   </a>
                   <a
-                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#c58b24]"
+                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#b38245]"
                     href="#faq"
                     onClick={closeMenu}
                   >
                     Perguntas Frequentes
                   </a>
                   <a
-                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#c58b24]"
+                    className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-800 hover:text-[#b38245]"
                     href="#contato"
                     onClick={closeMenu}
                   >
-                    Contato & Sede em Carmo do Rio Claro
+                    Contato & Sede em Cláudio
                   </a>
 
-                  <div className="mt-4 flex flex-col gap-2.5 pt-4 border-t border-slate-100">
-                    <a
-                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#9e6b15] via-[#d49d2c] to-[#7a500e] px-5 py-3 text-xs font-black uppercase tracking-[0.13em] text-white shadow-md"
-                      href={getWhatsAppUrl(
-                        "Olá, Dr. Alesson André! Gostaria de conversar com você sobre uma questão jurídica."
-                      )}
+                  <div className="pt-3">
+                    <GlowingButton
+                      href={getWhatsAppUrl()}
                       target="_blank"
-                      rel="noreferrer"
-                      onClick={closeMenu}
+                      size="sm"
+                      variant="gold"
+                      className="w-full justify-center"
                     >
-                      <WhatsAppIcon size={16} /> WhatsApp: {PHONE_DISPLAY}
-                    </a>
-                    <a
-                      className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-slate-50 px-5 py-3 text-xs font-semibold uppercase tracking-[0.13em] text-slate-800 transition-all hover:border-[#d49d2c]"
-                      href={GOOGLE_SEARCH_URL}
-                      target="_blank"
-                      rel="noreferrer"
-                      onClick={closeMenu}
-                    >
-                      <GoogleIcon size={15} /> 5,0 ★ no Google (136 avaliações)
-                    </a>
+                      <WhatsAppIcon size={15} /> Atendimento no WhatsApp
+                    </GlowingButton>
                   </div>
                 </div>
               </motion.nav>
@@ -627,41 +624,41 @@ export default function Home() {
           </AnimatePresence>
         </header>
 
-        {/* DOBRA 1: HERO SECTION (White Silk & Gold Metallic Aura) */}
+        {/* DOBRA 1: HERO SECTION (Silk White & Antique Gold Aura) */}
         <section
           id="inicio"
           className="relative isolate scroll-mt-24 border-b border-slate-200 bg-white py-14 sm:py-16 lg:py-20 overflow-hidden"
         >
           {/* Subtle warm luxury background aura */}
-          <div className="pointer-events-none absolute right-0 top-0 -z-10 size-[48rem] rounded-full bg-[radial-gradient(circle,rgba(229,178,66,0.14),transparent_65%)]" />
-          <div className="pointer-events-none absolute left-0 bottom-0 -z-10 size-[38rem] rounded-full bg-[radial-gradient(circle,rgba(18,35,63,0.07),transparent_65%)]" />
+          <div className="pointer-events-none absolute right-0 top-0 -z-10 size-[48rem] rounded-full bg-[radial-gradient(circle,rgba(223,174,103,0.14),transparent_65%)]" />
+          <div className="pointer-events-none absolute left-0 bottom-0 -z-10 size-[38rem] rounded-full bg-[radial-gradient(circle,rgba(14,34,58,0.07),transparent_65%)]" />
 
-          <div className="mx-auto grid min-h-[600px] max-w-7xl items-center gap-10 px-5 sm:px-8 lg:min-h-[660px] lg:grid-cols-[1.12fr_0.88fr] lg:gap-14 lg:px-12">
+          <div className="mx-auto grid min-h-[620px] max-w-7xl xl:max-w-[1380px] 2xl:max-w-[1460px] items-center gap-10 px-5 sm:px-8 lg:min-h-[700px] lg:grid-cols-[0.96fr_1.1fr] xl:grid-cols-[0.92fr_1.15fr] lg:gap-12 xl:gap-16 lg:px-12">
             <motion.div
               initial="hidden"
               animate="visible"
               variants={stagger}
-              className="relative z-10 max-w-2xl"
+              className="relative z-10 max-w-2xl lg:max-w-xl xl:max-w-2xl"
             >
               {/* Secondary Gold Accent Eyebrow Pill */}
               <motion.div
                 variants={reveal}
-                className="mb-5 inline-flex items-center gap-2 rounded-lg border border-[#d49d2c]/30 bg-[#fdfbf7] px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em] text-[#9e6b15] shadow-xs"
+                className="mb-5 inline-flex items-center gap-2 rounded-lg border border-[#c59b5f]/30 bg-[#fdfaf3] px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em] text-[#8f6229] shadow-xs"
               >
                 <span className="relative flex size-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#e5b242] opacity-75"></span>
-                  <span className="relative inline-flex size-2 rounded-full bg-[#d49d2c]"></span>
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#dfae67] opacity-75"></span>
+                  <span className="relative inline-flex size-2 rounded-full bg-[#c59b5f]"></span>
                 </span>
-                <span>DR. ALESSON ANDRÉ · OAB/MG 233.850 · CARMO DO RIO CLARO - MG</span>
+                <span>SANTIAGO, SILVA & SANTOS · CLÁUDIO - MG</span>
               </motion.div>
 
               <motion.h1
                 variants={reveal}
-                className="font-serif text-3xl leading-[1.14] tracking-[-0.02em] text-[#07090e] sm:text-[2.65rem] sm:leading-[1.14] lg:text-[3.25rem] xl:text-[3.45rem]"
+                className="font-serif text-3xl leading-[1.14] tracking-[-0.02em] text-[#091728] sm:text-[2.65rem] sm:leading-[1.14] lg:text-[3.25rem] xl:text-[3.45rem]"
               >
-                Advocacia combativa, estratégia incisiva &{" "}
-                <span className="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-[#9e6b15] via-[#d49d2c] to-[#e5b242]">
-                  defesa intransigente dos seus direitos.
+                Orientação jurídica clara, responsável &{" "}
+                <span className="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-[#8f6229] via-[#c59b5f] to-[#dfae67]">
+                  defesa estratégica dos seus direitos.
                 </span>
               </motion.h1>
 
@@ -669,7 +666,7 @@ export default function Home() {
                 variants={reveal}
                 className="mt-5 max-w-xl text-[15px] leading-7 text-slate-600 sm:text-base sm:leading-8"
               >
-                Liderado pelo <strong className="font-semibold text-slate-900">Dr. Alesson André (OAB/MG 233.850)</strong>, nosso escritório combina combatividade técnica, clareza e atendimento resolutivo na defesa das suas causas em <strong className="font-semibold text-slate-900">Direito Criminal (Plantão e Delegacias), Direito Trabalhista, Administrativa, Fóruns e Cartórios</strong>. Avaliado com nota máxima 5,0 ★ no Google com 136 avaliações reais. Sede no Andar dos Advogados em Carmo do Rio Claro e atendimento em todo o Brasil.
+                Fundado e liderado pelos advogados sócios <strong className="font-semibold text-slate-900">Armando Santiago, Lucas da Silva e Silva e Ana Carolina C. S. Santos</strong>, nosso escritório reúne solidez técnica, proximidade e atuação resolutiva em <strong className="font-semibold text-slate-900">Direito Civil, Previdenciário (INSS Rural e Urbano), Trabalhista, Imobiliário e Família</strong>. Reconhecido com nota máxima 5,0 ★ no Google (124 avaliações). Sede moderna em Cláudio - MG e atendimento digital em todo o Brasil.
               </motion.p>
 
               {/* Action Buttons */}
@@ -679,7 +676,7 @@ export default function Home() {
               >
                 <GlowingButton
                   href={getWhatsAppUrl(
-                    "Olá, Dr. Alesson André! Gostaria de agendar um atendimento para analisar meu caso."
+                    "Olá! Gostaria de conversar com a equipe de advogados da Santiago, Silva & Santos para analisar o meu caso."
                   )}
                   target="_blank"
                   size="lg"
@@ -695,7 +692,7 @@ export default function Home() {
                   variant="outline-dark"
                   className="rounded-lg"
                 >
-                  Conhecer Especialidades <ArrowRight size={14} />
+                  Conhecer Nossas Áreas <ArrowRight size={14} />
                 </GlowingButton>
               </motion.div>
 
@@ -705,178 +702,108 @@ export default function Home() {
                 className="mt-10 grid grid-cols-2 gap-3 pt-6 border-t border-slate-200 sm:grid-cols-3 text-xs text-slate-600"
               >
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-[#c58b24] shrink-0" />
-                  <span>Plantão Criminal & Flagrantes</span>
+                  <CheckCircle2 size={16} className="text-[#b38245] shrink-0" />
+                  <span>Civil & Previdenciário (INSS)</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-[#c58b24] shrink-0" />
-                  <span>Direito do Trabalho & Rescisões</span>
+                  <CheckCircle2 size={16} className="text-[#b38245] shrink-0" />
+                  <span>Trabalhista & Imobiliário</span>
                 </div>
                 <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
-                  <CheckCircle2 size={16} className="text-[#c58b24] shrink-0" />
-                  <span>Fóruns, Delegacias & Cartórios</span>
+                  <CheckCircle2 size={16} className="text-[#b38245] shrink-0" />
+                  <span>Família, Inventários & Contratos</span>
                 </div>
               </motion.div>
             </motion.div>
 
-            {/* Visual presentation - Dr. Alesson André Portrait Photo */}
+            {/* Visual presentation - Partners Photo (Enhanced & Expanded Sizing) */}
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.15 }}
-              className="relative mx-auto w-full max-w-[480px] lg:max-w-none"
+              className="relative mx-auto w-full max-w-[640px] lg:max-w-none"
             >
-              <div className="relative aspect-[3/4] sm:aspect-[4/5] overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-2xl ring-1 ring-black/5">
+              {/* Luxury ambient warm glow */}
+              <div className="pointer-events-none absolute -inset-3 -z-10 rounded-[2.5rem] bg-gradient-to-tr from-[#c59b5f]/30 via-[#dfae67]/15 to-[#0e223a]/15 blur-2xl opacity-75" />
+
+              <div className="relative aspect-[4/3] sm:aspect-[16/11] lg:aspect-[1.36/1] xl:aspect-[1.42/1] overflow-hidden rounded-2xl sm:rounded-3xl border border-slate-200/90 bg-slate-50 shadow-[0_25px_60px_-15px_rgba(9,23,40,0.25)] ring-1 ring-black/5">
                 <Image
                   src={FOTO_HERO_SRC}
-                  alt="Dr. Alesson André — Advogado Criminal e Trabalhista em Carmo do Rio Claro - MG"
+                  alt="Sócios da Santiago, Silva & Santos Sociedade de Advogados (LSS Advogados Associados)"
                   fill
                   priority
                   unoptimized
-                  className="object-cover object-center"
+                  className="object-cover object-center transition-transform duration-700 hover:scale-[1.02]"
                 />
 
                 {/* Floating identity bar on photo */}
-                <div className="absolute inset-x-4 bottom-4 rounded-xl border border-slate-200 bg-white/95 p-4 shadow-lg backdrop-blur-md">
-                  <div className="flex items-center justify-between">
+                <div className="absolute inset-x-3 bottom-3 sm:inset-x-5 sm:bottom-5 lg:inset-x-6 lg:bottom-6 rounded-xl sm:rounded-2xl border border-slate-200/90 bg-white/95 p-3.5 sm:p-4 lg:p-5 shadow-xl backdrop-blur-md">
+                  <div className="flex items-center justify-between gap-3 sm:gap-4">
                     <div>
-                      <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#c58b24]">
-                        Alesson André | Advogado
+                      <p className="text-[10px] sm:text-[10.5px] font-bold uppercase tracking-[0.2em] text-[#8f6229]">
+                        LSS Advogados Associados
                       </p>
-                      <p className="font-serif text-base font-bold text-slate-900 sm:text-lg">
-                        Dr. Alesson André
+                      <p className="font-serif text-sm font-bold text-slate-900 sm:text-base lg:text-lg">
+                        Santiago, Silva & Santos
+                      </p>
+                      <p className="text-[10.5px] sm:text-[11.5px] text-slate-500 line-clamp-1 mt-0.5">
+                        Armando Santiago · Lucas da Silva · Ana Carolina Santos
                       </p>
                     </div>
-                    <span className="rounded-md border border-[#d49d2c]/30 bg-[#fdfbf7] px-2.5 py-1 text-[10px] font-bold text-[#9e6b15]">
-                      OAB/MG 233.850
+                    <span className="shrink-0 rounded-lg border border-[#c59b5f]/30 bg-[#fdfaf3] px-2.5 py-1.5 sm:px-3 sm:py-1.5 text-[10px] sm:text-[11px] font-bold text-[#8f6229] shadow-xs">
+                      5,0 ★ Google
                     </span>
                   </div>
-                  <p className="mt-1 text-[11px] text-slate-600">
-                    ANDAR DOS ADVOGADOS - R. Cap. Pedro Augusto Corrêa, 74 - Sl 03 · Carmo do Rio Claro - MG
-                  </p>
                 </div>
               </div>
-
-              {/* Decorative subtle corner border */}
-              <span className="absolute -left-3 -top-3 -z-10 size-20 border-l-2 border-t-2 border-[#d49d2c]/40 sm:-left-5 sm:-top-5 sm:size-28" />
-              <span className="absolute -bottom-3 -right-3 -z-10 size-20 border-b-2 border-r-2 border-[#d49d2c]/40 sm:-bottom-5 sm:-right-5 sm:size-28" />
-
-              {/* Floating Google Review Badge */}
-              <a
-                href={GOOGLE_SEARCH_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="absolute -left-4 top-8 flex items-center gap-2.5 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-xl backdrop-blur-md transition-transform hover:scale-105 sm:-left-8"
-              >
-                <div className="grid size-9 place-items-center rounded-lg bg-slate-50 border border-slate-200 shadow-xs shrink-0">
-                  <GoogleIcon size={18} />
-                </div>
-                <div>
-                  <div className="flex items-center gap-1">
-                    <span className="font-bold text-sm text-slate-900">5,0 ★</span>
-                    <span className="text-[10px] text-[#e5b242]">★★★★★</span>
-                  </div>
-                  <p className="text-[10px] font-medium text-slate-600">
-                    136 avaliações no Google
-                  </p>
-                </div>
-              </a>
             </motion.div>
           </div>
         </section>
 
-        {/* DOBRA 2: FAIXA DE CREDENCIAIS (Obsidian Midnight - Alto Impacto e Autoridade) */}
-        <section
-          aria-label="Credenciais e Destaques"
-          className="border-b border-slate-800 bg-[#07090e] text-white"
-        >
-          <div className="mx-auto max-w-7xl px-5 py-9 sm:px-8 lg:px-12">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-              {[
-                {
-                  value: "5,0 ★ (136 Avaliações)",
-                  label: "Avaliação máxima no Google atestando atendimento ágil, transparência, ética e dedicação",
-                },
-                {
-                  value: "Criminal & Plantão 24h",
-                  label: "Atuação pronta para flagrantes, custódia e defesa em Delegacias e Fóruns",
-                },
-                {
-                  value: "Direito Trabalhista",
-                  label: "Defesa intransigente dos trabalhadores para reaver verbas rescisórias e horas extras",
-                },
-                {
-                  value: "Andar dos Advogados",
-                  label: "Sede em Carmo do Rio Claro (R. Cap. Pedro Augusto Corrêa, 74) e atendimento online",
-                },
-              ].map((item, index) => (
-                <div
-                  key={item.value}
-                  className={`flex flex-col justify-start ${
-                    index > 0
-                      ? "sm:border-l sm:border-slate-800/80 sm:pl-6 lg:pl-6 xl:pl-8"
-                      : ""
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <span className="size-2 shrink-0 rounded-full bg-[#e5b242]" />
-                    <h3 className="font-serif text-lg sm:text-[1.18rem] lg:text-[1.25rem] font-bold text-white tracking-tight leading-snug">
-                      {item.value}
-                    </h3>
-                  </div>
-                  <p className="mt-2.5 text-xs lg:text-[13px] leading-relaxed text-slate-400 font-normal pl-[18px]">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* DOBRA 3: SOBRE O ADVOGADO (Silk Surface) */}
+        {/* DOBRA 2: SOBRE O ESCRITÓRIO & OS SÓCIOS (Silk Surface) */}
         <section
           id="sobre"
-          className="scroll-mt-24 border-b border-slate-200 bg-[#f8fafc] py-20 text-slate-900 sm:py-28 lg:py-32"
+          className="scroll-mt-24 border-b border-slate-200 bg-[#fbf9f5] py-20 text-slate-900 sm:py-28 lg:py-32"
         >
-          <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20 lg:px-12">
-            {/* Visual presentation - Dr. Alesson André Portrait */}
+          <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[1fr_1fr] lg:gap-20 lg:px-12">
+            {/* Visual presentation - Office reception wall & Partners */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
               variants={reveal}
-              className="relative mx-auto w-full max-w-[490px]"
+              className="relative mx-auto w-full max-w-[500px]"
             >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
                 <Image
-                  src={FOTO_SOBRE_SRC}
-                  alt="Dr. Alesson André — Advocacia Criminal e Trabalhista em Carmo do Rio Claro"
+                  src={FOTO_SEDE_SRC}
+                  alt="Sede da Santiago, Silva & Santos em Cláudio - MG (LSS Advogados Associados)"
                   fill
                   unoptimized
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                 />
               </div>
 
               {/* Authority badge card */}
-              <div className="absolute -bottom-6 right-3 max-w-[340px] rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-xl sm:-right-6 sm:px-6">
-                <div className="flex items-center gap-2 text-[#c58b24]">
+              <div className="absolute -bottom-8 right-3 max-w-[360px] rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-xl sm:-right-6 sm:px-6">
+                <div className="flex items-center gap-2 text-[#b38245]">
                   <Sparkles size={16} />
-                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#c58b24]">
-                    Excelência Técnica & Combate Jurídico
+                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#8f6229]">
+                    Orientação Clara & Responsável
                   </p>
                 </div>
                 <p className="mt-1 font-serif text-lg leading-snug text-slate-900">
-                  Alesson André | Advogado
+                  LSS Advogados Associados
                 </p>
-                <p className="mt-0.5 text-[11px] font-medium text-[#c58b24]">
-                  OAB/MG 233.850 · Criminal & Trabalhista
+                <p className="mt-0.5 text-[11px] font-medium text-[#8f6229]">
+                  Armando Santiago · Lucas Silva · Ana Carolina Santos
                 </p>
                 <p className="mt-1 text-[11px] leading-4 text-slate-500">
-                  ANDAR DOS ADVOGADOS - R. Cap. Pedro Augusto Corrêa, 74 - Sl 03 · Carmo do Rio Claro - MG
+                  R. Goiás, 521 - 1° andar - Rosário · Cláudio - MG
                 </p>
               </div>
 
-              <span className="absolute -left-4 -top-4 -z-10 size-24 border-l-2 border-t-2 border-[#d49d2c]/40 sm:-left-7 sm:-top-7 sm:size-32" />
+              <span className="absolute -left-4 -top-4 -z-10 size-24 border-l-2 border-t-2 border-[#c59b5f]/40 sm:-left-7 sm:-top-7 sm:size-32" />
             </motion.div>
 
             {/* Story & Biography */}
@@ -888,19 +815,19 @@ export default function Home() {
             >
               <motion.div
                 variants={reveal}
-                className="mb-4 inline-flex items-center gap-2.5 rounded-md border border-[#d49d2c]/25 bg-[#fdfbf7] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#9e6b15] shadow-xs"
+                className="mb-4 inline-flex items-center gap-2.5 rounded-md border border-[#c59b5f]/25 bg-[#fdfaf3] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#8f6229] shadow-xs"
               >
-                <span className="size-2 shrink-0 rounded-full bg-[#d49d2c]" />
-                <span>SOBRE O PROFISSIONAL & COMPROMISSO</span>
+                <span className="size-2 shrink-0 rounded-full bg-[#c59b5f]" />
+                <span>SOBRE A BANCA & COMPROMISSO ÉTICO</span>
               </motion.div>
 
               <motion.h2
                 variants={reveal}
-                className="font-serif text-3xl leading-[1.14] tracking-[-0.02em] text-[#07090e] sm:text-4xl lg:text-[3.25rem]"
+                className="font-serif text-3xl leading-[1.14] tracking-[-0.02em] text-[#091728] sm:text-4xl lg:text-[3.25rem]"
               >
-                Uma advocacia pautada na estratégia incisiva, agilidade e{" "}
-                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#9e6b15] via-[#d49d2c] to-[#e5b242]">
-                  defesa destemida da sua liberdade e dos seus direitos.
+                Uma advocacia multidisciplinar pautada na confiança, agilidade e{" "}
+                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#8f6229] via-[#c59b5f] to-[#dfae67]">
+                  soluções jurídicas seguras e transparentes.
                 </span>
               </motion.h2>
 
@@ -908,14 +835,14 @@ export default function Home() {
                 variants={reveal}
                 className="mt-6 max-w-xl text-[15px] leading-7 text-slate-600"
               >
-                Nas demandas criminais e trabalhistas, cada minuto e cada prova definem o destino de um cidadão ou trabalhador. <strong className="font-bold text-slate-900">O Dr. Alesson André (OAB/MG 233.850) construiu sua atuação com base na combatividade leal, ética irretocável e atendimento direto ao cliente</strong>, desmistificando o processo e lutando pelos melhores resultados práticos.
+                A <strong className="font-bold text-slate-900">Santiago, Silva & Santos Sociedade de Advogados</strong> nasceu da união de três trajetórias jurídicas comprometidas com a ética, o rigor técnico e o atendimento humanizado: os advogados sócios <strong className="font-semibold text-slate-900">Armando Santiago, Lucas da Silva e Silva e Ana Carolina C. S. Santos</strong>.
               </motion.p>
 
               <motion.p
                 variants={reveal}
                 className="mt-4 max-w-xl text-[15px] leading-7 text-slate-600"
               >
-                Com sede no <strong className="font-bold text-slate-900">Andar dos Advogados</strong>, no centro de Carmo do Rio Claro, o Dr. Alesson atua presencialmente em Delegacias, Fóruns, Cartórios e tribunais de toda a região sul-mineira, prestando também correspondência jurídica especializada para grandes escritórios e departamentos jurídicos de todo o Brasil.
+                Com sede estruturada no bairro Rosário, no coração de Cláudio - MG, nosso escritório alia a acolhida e proximidade da advocacia tradicional com a modernidade das ferramentas digitais, prestando consultoria e defesa nas áreas <strong className="font-semibold text-slate-900">Cível, Previdenciária, Trabalhista e Imobiliária</strong> tanto em Cláudio e comarcas da região Centro-Oeste / Sul de Minas quanto em âmbito nacional.
               </motion.p>
 
               {/* Client Quote Card */}
@@ -924,10 +851,10 @@ export default function Home() {
                 className="mt-6 rounded-xl border border-slate-200 bg-white p-5 shadow-xs"
               >
                 <blockquote className="font-serif text-sm italic leading-relaxed text-slate-800">
-                  &ldquo;Excelente profissional! Me atendeu prontamente, tirou todas as dúvidas com clareza e dedicação. Conduziu nosso caso com maestria e transparência do início ao fim. Recomendo de olhos fechados em Carmo do Rio Claro e região.&rdquo;
+                  &ldquo;A equipe da Santiago, Silva & Santos nos acolheu com uma atenção e clareza excepcionais. Entenderam perfeitamente as nuances da nossa causa, agiram rápido e nos mantiveram seguros a cada decisão. Profissionais do mais alto gabarito!&rdquo;
                 </blockquote>
-                <p className="mt-2 text-[11px] font-semibold uppercase tracking-wider text-[#c58b24]">
-                  — Carlos Eduardo Silva (Cliente · Avaliação verificada no Google)
+                <p className="mt-2 text-[11px] font-semibold uppercase tracking-wider text-[#8f6229]">
+                  — Carlos Roberto Mendonça (Avaliação verificada 5,0 ★ no Google)
                 </p>
               </motion.div>
 
@@ -939,19 +866,19 @@ export default function Home() {
                 <div className="rounded-lg border border-slate-200 bg-white p-3 shadow-xs">
                   <p className="font-bold text-slate-900">5,0 ★ no Google</p>
                   <p className="mt-0.5 text-[11px] text-slate-500">
-                    136 avaliações 5 estrelas
+                    124 avaliações 5 estrelas
                   </p>
                 </div>
                 <div className="rounded-lg border border-slate-200 bg-white p-3 shadow-xs">
-                  <p className="font-bold text-slate-900">Plantão Criminal</p>
+                  <p className="font-bold text-slate-900">3 Sócios Integrados</p>
                   <p className="mt-0.5 text-[11px] text-slate-500">
-                    Flagrantes & Custódia
+                    Atuação Multidisciplinar
                   </p>
                 </div>
                 <div className="rounded-lg border border-slate-200 bg-white p-3 shadow-xs col-span-2 sm:col-span-1">
-                  <p className="font-bold text-slate-900">Fóruns & Cartórios</p>
+                  <p className="font-bold text-slate-900">Sede Própria</p>
                   <p className="mt-0.5 text-[11px] text-slate-500">
-                    Diligências & Audiências
+                    R. Goiás, 521 · Cláudio
                   </p>
                 </div>
               </motion.div>
@@ -961,53 +888,53 @@ export default function Home() {
                 className="mt-8 flex flex-col gap-3 text-xs text-slate-800"
               >
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-[#c58b24] shrink-0" />
-                  <span>Sede no ANDAR DOS ADVOGADOS - R. Cap. Pedro Augusto Corrêa, 74 - Sl 03, Carmo do Rio Claro - MG</span>
+                  <CheckCircle2 size={16} className="text-[#b38245] shrink-0" />
+                  <span>Sede na R. Goiás, 521 - 1° andar - Rosário, Cláudio - MG</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-[#c58b24] shrink-0" />
-                  <span>Atendimento rápido e direto no WhatsApp pelo Dr. Alesson André</span>
+                  <CheckCircle2 size={16} className="text-[#b38245] shrink-0" />
+                  <span>Atendimento ágil, atencioso e direto no WhatsApp com os advogados</span>
                 </div>
               </motion.div>
 
               <motion.div variants={reveal} className="mt-8">
                 <GlowingButton
                   href={getWhatsAppUrl(
-                    "Olá, Dr. Alesson André! Gostaria de agendar uma consulta para conversar sobre o meu caso."
+                    "Olá! Gostaria de agendar uma consulta com a equipe da Santiago, Silva & Santos."
                   )}
                   target="_blank"
                   size="md"
                   variant="gold"
                 >
-                  <WhatsAppIcon size={16} /> Falar com o Dr. Alesson André
+                  <WhatsAppIcon size={16} /> Falar com Nossos Advogados
                 </GlowingButton>
               </motion.div>
             </motion.div>
           </div>
         </section>
 
-        {/* DOBRA 4: ÁREAS DE ATUAÇÃO (Obsidian Midnight - Alto Impacto) */}
+        {/* DOBRA 3: ÁREAS DE ATUAÇÃO (Midnight Slate - Alto Impacto) */}
         <section
           id="atuacao"
-          className="scroll-mt-24 border-b border-slate-800 bg-[#07090e] py-20 text-white sm:py-28 lg:py-32"
+          className="scroll-mt-24 border-b border-slate-800 bg-[#060d16] py-20 text-white sm:py-28 lg:py-32"
         >
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
               <Heading
                 theme="dark"
                 eyebrow="PILARES DE ATUAÇÃO ESPECIALIZADA"
-                description="Conheça nossas áreas de atuação técnica. Clique em qualquer especialidade para ver detalhes, estratégias processuais e direcionamento imediato."
+                description="Conheça nossos pilares de atuação técnica. Clique em qualquer especialidade para ver detalhes, estratégias processuais e direcionamento imediato."
               >
-                Soluções jurídicas estratégicas em{" "}
-                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f5e0a9] to-[#e5b242]">
-                  Carmo do Rio Claro, Sul de Minas e em todo o Brasil.
+                Soluções jurídicas integradas em{" "}
+                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f3dfbc] to-[#dfae67]">
+                  Cláudio, Minas Gerais e em todo o Brasil.
                 </span>
               </Heading>
 
               <div className="shrink-0">
                 <GlowingButton
                   href={getWhatsAppUrl(
-                    "Olá, Dr. Alesson André! Tenho dúvidas sobre uma questão jurídica e gostaria de atendimento."
+                    "Olá! Gostaria de consultar sobre uma questão jurídica com a Santiago, Silva & Santos."
                   )}
                   target="_blank"
                   size="md"
@@ -1032,23 +959,23 @@ export default function Home() {
                   <motion.article
                     key={area.id}
                     variants={reveal}
-                    className="group relative flex flex-col justify-between rounded-xl border border-slate-800 bg-[#0c1019] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#d49d2c] hover:bg-[#111723] hover:shadow-[0_12px_36px_rgba(212,157,44,0.25)]"
+                    className="group relative flex flex-col justify-between rounded-xl border border-slate-800 bg-[#0a1524] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#c59b5f] hover:bg-[#0f2035] hover:shadow-[0_12px_36px_rgba(197,155,95,0.25)]"
                   >
                     <div>
                       <div className="flex items-center justify-between">
-                        <div className="grid size-12 place-items-center rounded-lg border border-slate-700 bg-[#162236] text-[#e5b242] transition-colors group-hover:border-[#d49d2c] group-hover:bg-[#d49d2c] group-hover:text-white">
+                        <div className="grid size-12 place-items-center rounded-lg border border-slate-700 bg-[#162c47] text-[#dfae67] transition-colors group-hover:border-[#c59b5f] group-hover:bg-[#c59b5f] group-hover:text-white">
                           <Icon size={22} />
                         </div>
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-[#e5b242]">
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-[#dfae67]">
                           Especialidade
                         </span>
                       </div>
 
-                      <h3 className="mt-5 font-serif text-xl font-bold text-white transition-colors group-hover:text-[#faf0d7]">
+                      <h3 className="mt-5 font-serif text-xl font-bold text-white transition-colors group-hover:text-[#fcf6ea]">
                         {area.title}
                       </h3>
 
-                      <p className="mt-1.5 text-[11px] font-semibold text-[#f5e0a9]">
+                      <p className="mt-1.5 text-[11px] font-semibold text-[#f3dfbc]">
                         {area.tag}
                       </p>
 
@@ -1061,7 +988,7 @@ export default function Home() {
                       <button
                         type="button"
                         onClick={() => setActiveArea(area)}
-                        className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-300 transition-colors hover:text-[#e5b242] cursor-pointer"
+                        className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-300 transition-colors hover:text-[#dfae67] cursor-pointer"
                       >
                         Ver Detalhes & Tópicos <ArrowRight size={13} />
                       </button>
@@ -1083,7 +1010,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* DOBRA 5: DIFERENCIAIS (Silk Surface) */}
+        {/* DOBRA 4: DIFERENCIAIS (Silk Surface) */}
         <section
           id="diferenciais"
           className="scroll-mt-24 border-b border-slate-200 bg-white py-20 text-slate-900 sm:py-28 lg:py-32"
@@ -1092,11 +1019,11 @@ export default function Home() {
             <Heading
               theme="light"
               eyebrow="POR QUE NOS ESCOLHER"
-              description="A união entre resposta rápida, combate técnico em audiências, proximidade com o cliente e localização estratégica em Carmo do Rio Claro."
+              description="A solidez de uma sociedade integrada de advogados sócios com comunicação direta, transparência e localização privilegiada em Cláudio - MG."
             >
-              O que diferencia a advocacia do{" "}
-              <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#9e6b15] via-[#d49d2c] to-[#e5b242]">
-                Dr. Alesson André?
+              O que diferencia a advocacia da{" "}
+              <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#8f6229] via-[#c59b5f] to-[#dfae67]">
+                Santiago, Silva & Santos?
               </span>
             </Heading>
 
@@ -1107,49 +1034,49 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.65 }}
-                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-[#f8fafc] p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#d49d2c] hover:shadow-md sm:p-9"
+                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-[#fbf9f5] p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#c59b5f] hover:shadow-md sm:p-9"
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="inline-flex items-center gap-1.5 rounded-md border border-[#d49d2c]/25 bg-[#fdfbf7] px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#9e6b15]">
-                      <Clock size={14} /> Atendimento Ágil & Plantão
+                    <span className="inline-flex items-center gap-1.5 rounded-md border border-[#c59b5f]/25 bg-[#fdfaf3] px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#8f6229]">
+                      <Compass size={14} /> Orientação Clara & Responsável
                     </span>
-                    <span className="text-xs font-semibold text-[#c58b24]">
-                      5,0 ★ Google (136)
+                    <span className="text-xs font-semibold text-[#8f6229]">
+                      5,0 ★ Google (124)
                     </span>
                   </div>
                   <h3 className="mt-4 font-serif text-2xl leading-tight text-slate-900 sm:text-[1.75rem]">
-                    Atendimento Ágil, Transparente & Sem Enrolação
+                    Comunicação Sem Termos Difíceis & Sem Falsas Promessas
                   </h3>
                   <p className="mt-3 text-[14px] leading-relaxed text-slate-600">
-                    Como atestam as 136 avaliações no Google com nota máxima 5,0, o Dr. Alesson André se destaca pelo atendimento acessível, respostas claras e atuação firme. Você conversa diretamente com o advogado no celular, recebendo orientação técnica precisa sem intermediários ou termos indecifráveis.
+                    Como atestam as mais de 120 avaliações cinco estrelas no Google, a Santiago, Silva & Santos se diferencia pela franqueza técnica e acessibilidade. Você fala diretamente com os advogados sócios, compreendendo cada passo do seu processo em linguagem clara, sabendo exatamente quais são suas reais chances e o cronograma estimado.
                   </p>
                   <ul className="mt-5 space-y-2 text-xs font-medium text-slate-700">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 size={15} className="shrink-0 text-[#c58b24]" />
-                      <span>Plantão Criminal pronto para emergências, flagrantes e custódia</span>
+                      <CheckCircle2 size={15} className="shrink-0 text-[#b38245]" />
+                      <span>Atendimento próximo e humanizado diretamente com os advogados</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 size={15} className="shrink-0 text-[#c58b24]" />
-                      <span>Respostas rápidas no WhatsApp, sem burocracia ou demoras</span>
+                      <CheckCircle2 size={15} className="shrink-0 text-[#b38245]" />
+                      <span>Respostas rápidas no WhatsApp sobre o andamento do seu caso</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 size={15} className="shrink-0 text-[#c58b24]" />
-                      <span>Honorários justos, transparentes e alinhados à ética profissional</span>
+                      <CheckCircle2 size={15} className="shrink-0 text-[#b38245]" />
+                      <span>Contratos e honorários transparentes alinhados ao Código da OAB</span>
                     </li>
                   </ul>
                 </div>
                 <div className="mt-7 border-t border-slate-200 pt-4">
                   <a
                     href={getWhatsAppUrl(
-                      "Olá, Dr. Alesson André! Gostaria de tirar dúvidas com você sobre o meu caso."
+                      "Olá! Gostaria de conversar com os advogados da Santiago, Silva & Santos sobre a minha situação jurídica."
                     )}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex w-full items-center justify-between rounded-lg border border-slate-300 bg-white px-4 py-3.5 text-[11px] font-bold uppercase tracking-[0.12em] text-slate-900 transition-all hover:border-[#d49d2c] hover:bg-[#d49d2c] hover:text-white"
+                    className="inline-flex w-full items-center justify-between rounded-lg border border-slate-300 bg-white px-4 py-3.5 text-[11px] font-bold uppercase tracking-[0.12em] text-slate-900 transition-all hover:border-[#c59b5f] hover:bg-[#c59b5f] hover:text-white"
                   >
                     <span className="inline-flex items-center gap-2">
-                      <WhatsAppIcon size={15} /> Conversar com o Dr. Alesson André
+                      <WhatsAppIcon size={15} /> Conversar no WhatsApp
                     </span>
                     <ArrowUpRight size={15} />
                   </a>
@@ -1162,49 +1089,49 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.65, delay: 0.1 }}
-                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-[#f8fafc] p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#d49d2c] hover:shadow-md sm:p-9"
+                className="group flex flex-col justify-between rounded-xl border border-slate-200 bg-[#fbf9f5] p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#c59b5f] hover:shadow-md sm:p-9"
               >
                 <div>
                   <div className="flex items-center justify-between">
-                    <span className="inline-flex items-center gap-1.5 rounded-md border border-[#d49d2c]/25 bg-[#fdfbf7] px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#9e6b15]">
-                      <Building2 size={14} /> Fóruns, Delegacias & Cartórios
+                    <span className="inline-flex items-center gap-1.5 rounded-md border border-[#c59b5f]/25 bg-[#fdfaf3] px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#8f6229]">
+                      <Users size={14} /> Atuação Multidisciplinar Integrada
                     </span>
-                    <span className="text-xs font-semibold text-[#c58b24]">
-                      Sul de Minas & Brasil
+                    <span className="text-xs font-semibold text-[#8f6229]">
+                      Três Sócios Integrados
                     </span>
                   </div>
                   <h3 className="mt-4 font-serif text-2xl leading-tight text-slate-900 sm:text-[1.75rem]">
-                    Atuação Presente & Correspondência Eficaz
+                    Três Sócios Dedicados à Mesma Causa
                   </h3>
                   <p className="mt-3 text-[14px] leading-relaxed text-slate-600">
-                    A presença física no Andar dos Advogados em Carmo do Rio Claro possibilita despacho rápido e contato direto com órgãos jurisdicionais, delegacias e serventias cartorárias. Seja para defender cidadãos locais ou prestar assessoria a departamentos jurídicos externos, o rigor e a pontualidade são marcas registradas.
+                    Diferente de profissionais isolados, a Santiago, Silva & Santos conta com a força combinada de Armando Santiago, Lucas da Silva e Silva e Ana Carolina C. S. Santos. Essa cooperação interna garante que sua causa seja examinada sob múltiplos ângulos jurídicos, com soluções completas que protegem seu patrimônio e sua família.
                   </p>
                   <ul className="mt-5 space-y-2 text-xs font-medium text-slate-700">
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 size={15} className="shrink-0 text-[#c58b24]" />
-                      <span>Presença constante perante a Delegacia de Polícia Civil e o Fórum</span>
+                      <CheckCircle2 size={15} className="shrink-0 text-[#b38245]" />
+                      <span>Análise jurídica aprofundada por profissionais especialistas</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 size={15} className="shrink-0 text-[#c58b24]" />
-                      <span>Relatórios circunstanciados em tempo real para correspondência jurídica</span>
+                      <CheckCircle2 size={15} className="shrink-0 text-[#b38245]" />
+                      <span>Sede acolhedora na R. Goiás, 521 - 1° andar - Rosário em Cláudio</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <CheckCircle2 size={15} className="shrink-0 text-[#c58b24]" />
-                      <span>Atuação técnica firme em audiências trabalhistas e criminais</span>
+                      <CheckCircle2 size={15} className="shrink-0 text-[#b38245]" />
+                      <span>Presença firme nos Fóruns, Cartórios e instâncias federais</span>
                     </li>
                   </ul>
                 </div>
                 <div className="mt-7 border-t border-slate-200 pt-4">
                   <a
                     href={getWhatsAppUrl(
-                      "Olá, Dr. Alesson André! Gostaria de consultar sobre a melhor estratégia jurídica para o meu caso."
+                      "Olá! Gostaria de consultar sobre a melhor estratégia jurídica para o meu caso com a equipe."
                     )}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex w-full items-center justify-between rounded-lg border border-slate-300 bg-white px-4 py-3.5 text-[11px] font-bold uppercase tracking-[0.12em] text-slate-900 transition-all hover:border-[#d49d2c] hover:bg-[#d49d2c] hover:text-white"
+                    className="inline-flex w-full items-center justify-between rounded-lg border border-slate-300 bg-white px-4 py-3.5 text-[11px] font-bold uppercase tracking-[0.12em] text-slate-900 transition-all hover:border-[#c59b5f] hover:bg-[#c59b5f] hover:text-white"
                   >
                     <span className="inline-flex items-center gap-2">
-                      <WhatsAppIcon size={15} /> Consultar Estratégia no WhatsApp
+                      <WhatsAppIcon size={15} /> Agendar Atendimento
                     </span>
                     <ArrowUpRight size={15} />
                   </a>
@@ -1214,25 +1141,25 @@ export default function Home() {
           </div>
         </section>
 
-        {/* DOBRA 6: MÉTODO EM 3 PASSOS (Obsidian Midnight) */}
-        <section className="relative overflow-hidden border-b border-slate-800 bg-[#07090e] py-20 text-white sm:py-24 lg:py-28">
+        {/* DOBRA 5: MÉTODO EM 3 ETAPAS (Midnight Slate) */}
+        <section className="relative overflow-hidden border-b border-slate-800 bg-[#060d16] py-20 text-white sm:py-24 lg:py-28">
           <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.88fr_1.12fr] lg:gap-20 lg:px-12">
             <div>
               <Heading
                 theme="dark"
                 eyebrow="COMO ATUAMOS NO SEU CASO"
-                description="Um método transparente, estratégico e focado em resultados práticos para garantir sua liberdade, seus direitos trabalhistas e a segurança da sua causa."
+                description="Um método transparente, estratégico e focado na proteção dos seus direitos e do seu patrimônio."
               >
                 Três etapas claras para{" "}
-                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f5e0a9] to-[#e5b242]">
-                  defender sua causa com segurança e firmeza absoluta.
+                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f3dfbc] to-[#dfae67]">
+                  conduzir sua causa com segurança e tranquilidade.
                 </span>
               </Heading>
 
-              <blockquote className="mt-8 rounded-xl border border-slate-800 bg-[#0c1019] p-6 font-serif text-base italic leading-7 text-slate-200 shadow-md">
-                &ldquo;Cada causa exige lealdade, rigor técnico e dedicação genuína. Seja acompanhando um flagrante na delegacia, ingressando com uma reclamatória trabalhista ou realizando uma audiência no Fórum, nosso compromisso é lutar pelo melhor resultado para quem confia em nossa advocacia.&rdquo;
-                <footer className="mt-3 font-sans text-[11px] font-semibold not-italic uppercase tracking-wider text-[#e5b242]">
-                  — Dr. Alesson André · Advogado (OAB/MG 233.850)
+              <blockquote className="mt-8 rounded-xl border border-slate-800 bg-[#0a1524] p-6 font-serif text-base italic leading-7 text-slate-200 shadow-md">
+                &ldquo;Nosso propósito é desmistificar o direito e entregar uma advocacia de resultado, pautada na verdade, na ética e na defesa intransigente de quem confia em nossa sociedade.&rdquo;
+                <footer className="mt-3 font-sans text-[11px] font-semibold not-italic uppercase tracking-wider text-[#dfae67]">
+                  — Santiago, Silva & Santos Sociedade de Advogados
                 </footer>
               </blockquote>
             </div>
@@ -1247,18 +1174,18 @@ export default function Home() {
               {[
                 [
                   "01",
-                  "Atendimento Rápido & Diagnóstico Técnico Imediato",
-                  "Contato direto e sem intermediários pelo WhatsApp ou presencialmente em nosso escritório no Andar dos Advogados. Avaliamos a urgência dos fatos, documentos e histórico com sigilo absoluto.",
+                  "Atendimento Atencioso & Diagnóstico Técnico Seguro",
+                  "Contato direto pelo WhatsApp ou presencialmente em nossa sede na R. Goiás, 521 em Cláudio. Analisamos seus documentos, fatos e objetivos com sigilo profissional absoluto.",
                 ],
                 [
                   "02",
-                  "Plano de Ação Combativo & Intervenção Ágil",
-                  "Definição da melhor rota processual (pedido de liberdade, audiência de custódia, reclamatória trabalhista, ação cível ou diligência em cartório), ingressando com rapidez perante os órgãos competentes.",
+                  "Definição Estratégica & Ação Resolutiva",
+                  "Planejamos a melhor estratégia jurídica (seja acordo extrajudicial em cartório, requerimento no INSS, ação civil, trabalhista ou imobiliária), atuando com rapidez e rigor perante os órgãos competentes.",
                 ],
                 [
                   "03",
-                  "Acompanhamento Próximo & Atualização Contínua",
-                  "Você não fica no escuro. O Dr. Alesson André mantém você informado sobre cada andamento, despacho e decisão do processo diretamente no seu celular em linguagem clara e acessível.",
+                  "Acompanhamento Transparente & Informação Contínua",
+                  "Você não fica com dúvidas. Mantemos você atualizado sobre cada despacho, decisão e andamento do seu processo diretamente no seu celular, com orientação clara e responsável.",
                 ],
               ].map(([number, title, description]) => (
                 <motion.div
@@ -1266,7 +1193,7 @@ export default function Home() {
                   variants={reveal}
                   className="grid gap-3 py-6 first:pt-0 sm:grid-cols-[70px_1fr] sm:gap-6 sm:py-7"
                 >
-                  <span className="font-serif text-2xl font-semibold text-[#e5b242]">
+                  <span className="font-serif text-2xl font-semibold text-[#dfae67]">
                     {number}
                   </span>
                   <div>
@@ -1281,21 +1208,21 @@ export default function Home() {
           </div>
         </section>
 
-        {/* DOBRA 7: AVALIAÇÕES GOOGLE 5.0 (Silk Surface - 136 Avaliações Reais) */}
+        {/* DOBRA 6: AVALIAÇÕES GOOGLE 5.0 (Silk Surface - 124 Avaliações Reais) */}
         <section
           id="avaliacoes"
-          className="scroll-mt-24 border-b border-slate-200 bg-[#f8fafc] py-20 text-slate-900 sm:py-28 lg:py-32"
+          className="scroll-mt-24 border-b border-slate-200 bg-[#fbf9f5] py-20 text-slate-900 sm:py-28 lg:py-32"
         >
           <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
             <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
               <Heading
                 theme="light"
                 eyebrow="PROVA SOCIAL VERIFICADA · GOOGLE MEU NEGÓCIO"
-                description="Veja depoimentos reais de clientes e parceiros atendidos pelo Dr. Alesson André em Carmo do Rio Claro e no Sul de Minas."
+                description="Veja depoimentos reais de clientes e parceiros atendidos pela Santiago, Silva & Santos em Cláudio e em Minas Gerais."
               >
                 Avaliado com nota máxima 5,0 ★ em{" "}
-                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#9e6b15] via-[#d49d2c] to-[#e5b242]">
-                  136 avaliações no Google.
+                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#8f6229] via-[#c59b5f] to-[#dfae67]">
+                  124 avaliações no Google.
                 </span>
               </Heading>
 
@@ -1309,17 +1236,17 @@ export default function Home() {
                     <span className="font-serif text-2xl font-bold text-slate-900">
                       5,0
                     </span>
-                    <div className="flex text-[#e5b242]">
+                    <div className="flex text-[#dfae67]">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} size={15} className="fill-[#e5b242]" />
+                        <Star key={i} size={15} className="fill-[#dfae67]" />
                       ))}
                     </div>
                   </div>
                   <p className="text-xs font-semibold text-slate-900">
-                    Alesson André | Advogado
+                    Santiago, Silva & Santos
                   </p>
                   <p className="text-[11px] text-slate-500">
-                    136 avaliações 5 estrelas no Google
+                    124 avaliações 5 estrelas no Google
                   </p>
                 </div>
               </div>
@@ -1336,16 +1263,16 @@ export default function Home() {
                 <motion.article
                   key={review.name}
                   variants={reveal}
-                  className="flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-[#d49d2c] hover:shadow-md"
+                  className="flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-[#c59b5f] hover:shadow-md"
                 >
                   <div>
                     <div className="flex items-center justify-between">
-                      <div className="flex text-[#e5b242]">
+                      <div className="flex text-[#dfae67]">
                         {[...Array(review.rating)].map((_, i) => (
-                          <Star key={i} size={14} className="fill-[#e5b242]" />
+                          <Star key={i} size={14} className="fill-[#dfae67]" />
                         ))}
                       </div>
-                      <span className="rounded-md border border-[#d49d2c]/25 bg-[#fdfbf7] px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-[#9e6b15]">
+                      <span className="rounded-md border border-[#c59b5f]/25 bg-[#fdfaf3] px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-[#8f6229]">
                         Google Verificado
                       </span>
                     </div>
@@ -1359,8 +1286,8 @@ export default function Home() {
                     </p>
 
                     {review.reply && (
-                      <div className="mt-3 rounded-lg border-l-2 border-[#d49d2c] bg-[#fdfbf7] p-2.5 text-[11px] leading-5 text-slate-700">
-                        <p className="font-semibold text-[#9e6b15]">Resposta do Dr. Alesson André:</p>
+                      <div className="mt-3 rounded-lg border-l-2 border-[#c59b5f] bg-[#fdfaf3] p-2.5 text-[11px] leading-5 text-slate-700">
+                        <p className="font-semibold text-[#8f6229]">Resposta da Equipe:</p>
                         <p className="italic">{review.reply}</p>
                       </div>
                     )}
@@ -1384,30 +1311,30 @@ export default function Home() {
                 href={GOOGLE_SEARCH_URL}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-sm transition-all hover:border-[#d49d2c] hover:text-[#d49d2c]"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-6 py-3.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-sm transition-all hover:border-[#c59b5f] hover:text-[#c59b5f]"
               >
-                <GoogleIcon size={16} /> Ver todas as 136 avaliações no Google <ArrowUpRight size={14} />
+                <GoogleIcon size={16} /> Ver todas as 124 avaliações no Google <ArrowUpRight size={14} />
               </a>
             </div>
           </div>
         </section>
 
-        {/* DOBRA 8: PERGUNTAS FREQUENTES / FAQ (Obsidian Midnight) */}
+        {/* DOBRA 7: PERGUNTAS FREQUENTES / FAQ (Midnight Slate) */}
         <section
           id="faq"
-          className="scroll-mt-24 border-b border-slate-800 bg-[#07090e] py-20 text-white sm:py-28 lg:py-32"
+          className="scroll-mt-24 border-b border-slate-800 bg-[#060d16] py-20 text-white sm:py-28 lg:py-32"
         >
           <div className="mx-auto max-w-4xl px-5 sm:px-8">
             <div className="text-center">
               <p className="eyebrow-light justify-center">DÚVIDAS FREQUENTES</p>
               <h2 className="mt-4 font-serif text-3xl leading-[1.14] tracking-[-0.02em] text-white sm:text-4xl lg:text-[3.15rem]">
                 Respostas diretas e esclarecedoras sobre os{" "}
-                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f5e0a9] to-[#e5b242]">
+                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-white via-[#f3dfbc] to-[#dfae67]">
                   seus direitos e nosso atendimento.
                 </span>
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-slate-400">
-                Transparência total desde o primeiro contato. Se sua dúvida não estiver listada abaixo, clique no botão e fale diretamente com o Dr. Alesson André no WhatsApp.
+                Transparência total desde o primeiro contato. Se você tiver outra dúvida sobre seu caso, fale agora mesmo com a equipe no WhatsApp.
               </p>
             </div>
 
@@ -1417,7 +1344,7 @@ export default function Home() {
                 return (
                   <div
                     key={faq.q}
-                    className="overflow-hidden rounded-xl border border-slate-800 bg-[#0c1019] transition-colors hover:border-slate-700"
+                    className="overflow-hidden rounded-xl border border-slate-800 bg-[#0a1524] transition-colors hover:border-slate-700"
                   >
                     <button
                       type="button"
@@ -1427,7 +1354,7 @@ export default function Home() {
                       <span>{faq.q}</span>
                       <ChevronDown
                         size={18}
-                        className={`shrink-0 text-[#e5b242] transition-transform duration-200 ${
+                        className={`shrink-0 text-[#dfae67] transition-transform duration-200 ${
                           isOpen ? "rotate-180" : ""
                         }`}
                       />
@@ -1444,12 +1371,12 @@ export default function Home() {
 
             <div className="mt-10 text-center">
               <p className="text-sm text-slate-400">
-                Tem uma dúvida urgente ou necessita de atendimento imediato?
+                Quer tirar uma dúvida específica sobre seu caso?
               </p>
               <div className="mt-4">
                 <GlowingButton
                   href={getWhatsAppUrl(
-                    "Olá, Dr. Alesson André! Gostaria de tirar uma dúvida sobre a minha situação jurídica."
+                    "Olá! Gostaria de tirar uma dúvida jurídica com a equipe da Santiago, Silva & Santos."
                   )}
                   target="_blank"
                   size="md"
@@ -1462,7 +1389,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* DOBRA 9: CONTATO & SEDE (Silk Surface) */}
+        {/* DOBRA 8: CONTATO & SEDE (Silk Surface) */}
         <section
           id="contato"
           className="scroll-mt-24 border-b border-slate-200 bg-white py-20 text-slate-900 sm:py-28 lg:py-32"
@@ -1471,26 +1398,26 @@ export default function Home() {
             <div>
               <Heading
                 theme="light"
-                eyebrow="CONTATO & SEDE EM CARMO DO RIO CLARO"
-                description="Fale diretamente com o Dr. Alesson André pelo WhatsApp para orientação imediata, sigilo profissional e rigor técnico."
+                eyebrow="CONTATO & SEDE EM CLÁUDIO - MG"
+                description="Converse diretamente com os advogados da Santiago, Silva & Santos pelo WhatsApp para orientação imediata, sigilo e rigor técnico."
               >
                 Prontidão total para{" "}
-                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#9e6b15] via-[#d49d2c] to-[#e5b242]">
-                  proteger sua liberdade e defender seus interesses.
+                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#8f6229] via-[#c59b5f] to-[#dfae67]">
+                  orientar você e defender seus interesses com responsabilidade.
                 </span>
               </Heading>
 
               <div className="mt-9 flex flex-col items-start gap-4">
                 <GlowingButton
                   href={getWhatsAppUrl(
-                    "Olá, Dr. Alesson André! Gostaria de agendar um atendimento."
+                    "Olá! Gostaria de agendar um atendimento com a Santiago, Silva & Santos."
                   )}
                   target="_blank"
                   size="lg"
                   variant="gold"
                   className="rounded-lg shadow-md"
                 >
-                  <WhatsAppIcon size={17} /> Falar no WhatsApp com o Dr. Alesson
+                  <WhatsAppIcon size={17} /> Falar no WhatsApp Agora
                 </GlowingButton>
                 <p className="text-[11px] leading-5 text-slate-600">
                   WhatsApp e telefone direto:{" "}
@@ -1502,48 +1429,48 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <Clock
                     size={16}
-                    className="mt-0.5 shrink-0 text-[#c58b24]"
+                    className="mt-0.5 shrink-0 text-[#b38245]"
                   />
                   <div>
                     <p className="font-semibold text-slate-900">
                       Horário de Funcionamento
                     </p>
-                    <p className="mt-0.5 text-[#9e6b15] font-bold">
-                      Segunda a Sexta: 08:00 às 17:30 · Plantão para Urgências Criminais
+                    <p className="mt-0.5 text-[#8f6229] font-bold">
+                      Segunda a Sexta: 08:00 às 18:00
                     </p>
                     <p className="text-[11px] text-slate-500">
-                      Atendimento presencial no Andar dos Advogados e suporte online contínuo
+                      Atendimento presencial em nossa sede e suporte online contínuo
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3 pt-1">
-                  <Phone size={16} className="shrink-0 text-[#c58b24]" />
+                  <Phone size={16} className="shrink-0 text-[#b38245]" />
                   <a
                     href={`tel:+${WHATSAPP_NUMBER}`}
-                    className="font-medium text-slate-900 transition-colors hover:text-[#c58b24]"
+                    className="font-medium text-slate-900 transition-colors hover:text-[#b38245]"
                   >
                     {PHONE_DISPLAY} (Ligações e WhatsApp)
                   </a>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <InstagramIcon size={16} className="shrink-0 text-[#c58b24]" />
+                  <InstagramIcon size={16} className="shrink-0 text-[#b38245]" />
                   <a
                     href={INSTAGRAM_URL}
                     target="_blank"
                     rel="noreferrer"
-                    className="transition-colors hover:text-[#c58b24] text-slate-900 font-medium"
+                    className="transition-colors hover:text-[#b38245] text-slate-900 font-medium"
                   >
                     {INSTAGRAM_HANDLE} (Instagram Oficial)
                   </a>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <Mail size={16} className="shrink-0 text-[#c58b24]" />
+                  <Mail size={16} className="shrink-0 text-[#b38245]" />
                   <a
                     href={`mailto:${EMAIL_CONTACT}`}
-                    className="transition-colors hover:text-[#c58b24] text-slate-900 font-medium"
+                    className="transition-colors hover:text-[#b38245] text-slate-900 font-medium"
                   >
                     {EMAIL_CONTACT}
                   </a>
@@ -1552,13 +1479,20 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <MapPin
                     size={16}
-                    className="mt-0.5 shrink-0 text-[#c58b24]"
+                    className="mt-0.5 shrink-0 text-[#b38245]"
                   />
                   <div>
-                    <span className="text-slate-900 font-medium">{ADDRESS_TEXT}</span>
+                    <a
+                      href={GOOGLE_MAPS_URL}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-slate-900 font-medium hover:text-[#b38245] transition-colors"
+                    >
+                      {ADDRESS_TEXT}
+                    </a>
                     <br />
                     <span className="text-[11px] text-slate-500">
-                      Sede em Carmo do Rio Claro - MG e assessoria jurídica digital em todo o Brasil
+                      Sede em Cláudio - MG e assessoria jurídica digital em todo o Brasil
                     </span>
                   </div>
                 </div>
@@ -1566,41 +1500,41 @@ export default function Home() {
             </div>
 
             {/* Brand Presentation Card */}
-            <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-[#f8fafc] p-7 shadow-lg sm:p-10">
-              <div className="absolute right-0 top-0 h-1.5 w-32 bg-gradient-to-r from-[#c58b24] via-[#e5b242] to-[#12233f]" />
+            <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-[#fbf9f5] p-7 shadow-lg sm:p-10">
+              <div className="absolute right-0 top-0 h-1.5 w-32 bg-gradient-to-r from-[#b38245] via-[#dfae67] to-[#0e223a]" />
 
               <div className="flex items-center gap-4">
                 <div className="relative size-16 shrink-0">
                   <Image
                     src={LOGO_SYMBOL_SRC}
-                    alt="Monograma AA - Alesson André Advogado"
+                    alt="Medalhão Dourado LSS - Santiago, Silva & Santos"
                     fill
                     unoptimized
                     className="object-contain"
                   />
                 </div>
                 <div>
-                  <p className="font-cinzel text-[14px] font-bold uppercase tracking-[0.14em] text-[#07090e]">
-                    ALESSON ANDRÉ
+                  <p className="font-cinzel text-[14px] font-bold uppercase tracking-[0.14em] text-[#091728]">
+                    SANTIAGO, SILVA & SANTOS
                   </p>
-                  <p className="text-[10px] font-bold tracking-[0.2em] text-[#c58b24] uppercase mt-0.5">
-                    ADVOGADO · OAB/MG 233.850
+                  <p className="text-[10px] font-bold tracking-[0.2em] text-[#8f6229] uppercase mt-0.5">
+                    SOCIEDADE DE ADVOGADOS · LSS
                   </p>
                 </div>
               </div>
 
-              {/* Photo Presentation */}
+              {/* Photo Presentation - Partners */}
               <div className="relative mt-5 aspect-[16/10] w-full overflow-hidden rounded-lg border border-slate-200 bg-slate-100 shadow-xs">
                 <Image
                   src={FOTO_HERO_SRC}
-                  alt="Dr. Alesson André em seu escritório"
+                  alt="Sócios Armando Santiago, Lucas da Silva e Silva e Ana Carolina Santos"
                   fill
                   unoptimized
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-4 text-white">
-                  <p className="text-xs font-semibold">Atendimento Estratégico, Destemido e Resolutivo</p>
-                  <p className="text-[10px] text-slate-200">Carmo do Rio Claro · Sul de Minas & Atendimento Online</p>
+                  <p className="text-xs font-semibold">Orientação Jurídica Clara e Responsável</p>
+                  <p className="text-[10px] text-slate-200">Cláudio · Centro-Oeste / Sul de Minas & Atendimento Digital</p>
                 </div>
               </div>
 
@@ -1609,38 +1543,34 @@ export default function Home() {
                   {FIRM_NAME}
                 </strong>
                 <br />
-                {LAWYER_NAME} · {LAWYER_TITLE}
+                {PARTNERS_TEXT}
                 <br />
                 {ADDRESS_TEXT}
               </address>
 
               {/* Weekly schedule table */}
               <div className="mt-6 rounded-lg border border-slate-200 bg-white p-4 text-xs">
-                <p className="mb-2.5 text-[10px] font-bold uppercase tracking-[0.15em] text-[#c58b24]">
+                <p className="mb-2.5 text-[10px] font-bold uppercase tracking-[0.15em] text-[#8f6229]">
                   Atendimento & Horários
                 </p>
                 <div className="grid grid-cols-2 gap-y-1.5 text-slate-700">
-                  <span>Plantão Criminal</span>
-                  <span className="text-right font-bold text-[#9e6b15]">
-                    Atendimento de Urgência
-                  </span>
                   <span>Segunda a Sexta</span>
-                  <span className="text-right font-medium text-slate-600">
-                    08:00 às 17:30
+                  <span className="text-right font-medium text-slate-900 font-semibold">
+                    08:00 às 18:00
                   </span>
                   <span>Atendimento Presencial</span>
                   <span className="text-right font-medium text-slate-600">
-                    Andar dos Advogados
+                    Sede em Cláudio - Rosário
                   </span>
                   <span>Atendimento Online</span>
-                  <span className="text-right text-slate-900 font-semibold">Todo o Brasil</span>
+                  <span className="text-right text-[#8f6229] font-bold">Todo o Brasil</span>
                 </div>
               </div>
 
               <div className="mt-7 flex flex-col gap-3">
                 <GlowingButton
                   href={getWhatsAppUrl(
-                    "Olá, Dr. Alesson André! Gostaria de agendar um atendimento."
+                    "Olá! Gostaria de agendar um atendimento com a Santiago, Silva & Santos."
                   )}
                   target="_blank"
                   size="md"
@@ -1654,20 +1584,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* DOBRA 10: PRÉ-FOOTER BANNER (Obsidian Midnight) */}
-        <section className="border-t border-slate-800 bg-[#0c1019] px-5 py-14 text-white shadow-xl sm:px-8 sm:py-16 lg:px-12">
+        {/* DOBRA 9: PRÉ-FOOTER BANNER (Midnight Slate) */}
+        <section className="border-t border-slate-800 bg-[#0a1524] px-5 py-14 text-white shadow-xl sm:px-8 sm:py-16 lg:px-12">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 text-center md:flex-row md:text-left">
             <div>
               <p className="eyebrow-light">
-                <Sparkles size={13} className="text-[#e5b242]" /> ALESSON ANDRÉ | ADVOGADO (OAB/MG 233.850)
+                <Sparkles size={13} className="text-[#dfae67]" /> SANTIAGO, SILVA & SANTOS SOCIEDADE DE ADVOGADOS
               </p>
               <h2 className="mt-3 max-w-2xl font-serif text-3xl leading-tight text-white sm:text-4xl">
-                Pronto para analisar seu caso e defender seus direitos com técnica impecável e combatividade.
+                Prontos para analisar sua causa e defender seus direitos com técnica impecável e clareza.
               </h2>
             </div>
             <GlowingButton
               href={getWhatsAppUrl(
-                "Olá, Dr. Alesson André! Preciso de orientação jurídica para o meu caso."
+                "Olá! Preciso de orientação jurídica para o meu caso com a equipe Santiago, Silva & Santos."
               )}
               target="_blank"
               size="lg"
@@ -1679,20 +1609,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* DOBRA 11: RODAPÉ INSTITUCIONAL (Obsidian Midnight) */}
-        <footer className="border-t border-slate-800 bg-[#07090e] px-5 py-14 text-slate-400 sm:px-8 lg:px-12">
+        {/* DOBRA 10: RODAPÉ INSTITUCIONAL (Midnight Slate) */}
+        <footer className="border-t border-slate-800 bg-[#060d16] px-5 py-14 text-slate-400 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
             {/* Col 1: Brand */}
             <div className="md:col-span-2">
               <a
                 href="#inicio"
-                aria-label="Alesson André — Advogado"
+                aria-label="Santiago, Silva & Santos Sociedade de Advogados"
                 className="flex items-center gap-3.5"
               >
                 <div className="relative size-14 shrink-0">
                   <Image
                     src={LOGO_SYMBOL_SRC}
-                    alt="Monograma AA - Alesson André Advogado"
+                    alt="Medalhão Dourado - Santiago, Silva & Santos"
                     fill
                     unoptimized
                     className="object-contain"
@@ -1700,16 +1630,16 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="font-cinzel text-lg font-bold tracking-[0.14em] text-white">
-                    ALESSON ANDRÉ
+                    SANTIAGO, SILVA & SANTOS
                   </p>
-                  <p className="text-[10px] font-semibold tracking-[0.22em] text-[#e5b242] uppercase mt-0.5">
-                    ADVOGADO · OAB/MG 233.850
+                  <p className="text-[10px] font-semibold tracking-[0.22em] text-[#dfae67] uppercase mt-0.5">
+                    SOCIEDADE DE ADVOGADOS · LSS
                   </p>
                 </div>
               </a>
 
               <p className="mt-4 max-w-md text-xs leading-6 text-slate-400">
-                Advocacia combativa e especializada em Direito Criminal, Direito Trabalhista, Administrativa, Fóruns, Delegacias e Cartórios, com sede no Andar dos Advogados em Carmo do Rio Claro - MG e atuação online em todo o Brasil.
+                Advocacia com orientação clara e responsável em Direito Civil, Previdenciário (INSS Rural e Urbano), Trabalhista, Imobiliário, Família e Sucessões, com sede em Cláudio - MG e atendimento digital em todo o território nacional.
               </p>
 
               <div className="mt-5 flex flex-wrap items-center gap-3 text-xs">
@@ -1717,17 +1647,17 @@ export default function Home() {
                   href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-md border border-slate-800 bg-[#0c1019] px-3 py-1.5 text-slate-300 transition-colors hover:border-[#e5b242] hover:text-white"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-slate-800 bg-[#0a1524] px-3 py-1.5 text-slate-300 transition-colors hover:border-[#dfae67] hover:text-white"
                 >
-                  <InstagramIcon size={14} className="text-[#e5b242]" /> Instagram {INSTAGRAM_HANDLE}
+                  <InstagramIcon size={14} className="text-[#dfae67]" /> Instagram {INSTAGRAM_HANDLE}
                 </a>
                 <a
                   href={GOOGLE_SEARCH_URL}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-md border border-slate-800 bg-[#0c1019] px-3 py-1.5 text-slate-300 transition-colors hover:border-[#e5b242] hover:text-white"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-slate-800 bg-[#0a1524] px-3 py-1.5 text-slate-300 transition-colors hover:border-[#dfae67] hover:text-white"
                 >
-                  <GoogleIcon size={14} /> Google 5,0 ★ (136 avaliações)
+                  <GoogleIcon size={14} /> Google 5,0 ★ (124 avaliações)
                 </a>
               </div>
             </div>
@@ -1745,7 +1675,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a className="footer-link" href="#sobre">
-                    O Advogado (Dr. Alesson André)
+                    O Escritório & Sócios
                   </a>
                 </li>
                 <li>
@@ -1755,12 +1685,12 @@ export default function Home() {
                 </li>
                 <li>
                   <a className="footer-link" href="#diferenciais">
-                    Diferenciais do Escritório
+                    Diferenciais da Banca
                   </a>
                 </li>
                 <li>
                   <a className="footer-link" href="#avaliacoes">
-                    Avaliações no Google (136)
+                    Avaliações no Google (124)
                   </a>
                 </li>
                 <li>
@@ -1786,10 +1716,10 @@ export default function Home() {
                   <strong className="text-white">Telefone / WhatsApp:</strong>
                   <br />
                   <a
-                    href={getWhatsAppUrl("Olá, Dr. Alesson! Gostaria de falar com seu escritório.")}
+                    href={getWhatsAppUrl("Olá! Gostaria de falar com o escritório Santiago, Silva & Santos.")}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-[#e5b242] hover:underline"
+                    className="text-[#dfae67] hover:underline"
                   >
                     {PHONE_DISPLAY}
                   </a>
@@ -1800,9 +1730,9 @@ export default function Home() {
                   {ADDRESS_TEXT}
                 </li>
                 <li>
-                  <strong className="text-white">Horário:</strong>
+                  <strong className="text-white">Horário de Funcionamento:</strong>
                   <br />
-                  Segunda a Sexta: 08:00 às 17:30 · Plantão para Emergências Criminais
+                  Segunda a Sexta: 08:00 às 18:00
                 </li>
                 <li>
                   <strong className="text-white">E-mail:</strong>
@@ -1812,9 +1742,9 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <strong className="text-white">Especialização:</strong>
+                  <strong className="text-white">Áreas Principais:</strong>
                   <br />
-                  Criminal · Trabalhista · Administrativa · Fóruns, Delegacias e Cartórios
+                  Civil · Previdenciário · Trabalhista · Imobiliário · Família
                 </li>
               </ul>
             </div>
@@ -1822,10 +1752,10 @@ export default function Home() {
 
           <div className="mx-auto mt-12 max-w-7xl border-t border-slate-800/80 pt-6 text-center text-[11px] text-slate-500">
             <p>
-              © {new Date().getFullYear()} ALESSON ANDRÉ | ADVOGADO (OAB/MG 233.850). Todos os direitos reservados.
+              © {new Date().getFullYear()} Santiago, Silva & Santos Sociedade de Advogados (LSS Advogados Associados). Todos os direitos reservados.
             </p>
             <p className="mt-1 text-[10px]">
-              ANDAR DOS ADVOGADOS - R. Cap. Pedro Augusto Corrêa, 74 - Sala 03 - Centro, Carmo do Rio Claro - MG, 37150-000 · Advocacia em conformidade com o Código de Ética e Disciplina da OAB.
+              R. Goiás, 521 - 1° andar - Rosário, Cláudio - MG, 35530-000 · Advocacia em conformidade com o Código de Ética e Disciplina da OAB.
             </p>
           </div>
         </footer>
@@ -1837,11 +1767,11 @@ export default function Home() {
         >
           <a
             href={getWhatsAppUrl(
-              "Olá, Dr. Alesson André! Gostaria de um atendimento jurídico pelo WhatsApp."
+              "Olá! Gostaria de um atendimento jurídico pelo WhatsApp com a equipe da Santiago, Silva & Santos."
             )}
             target="_blank"
             rel="noreferrer"
-            aria-label="Falar agora pelo WhatsApp com o Dr. Alesson André"
+            aria-label="Falar agora pelo WhatsApp com a Santiago, Silva & Santos"
             className="group flex items-center gap-2.5 rounded-full border border-[#25D366]/80 bg-gradient-to-r from-[#0d331a] via-[#128C7E] to-[#075E54] px-4 py-3 text-xs font-bold text-white shadow-[0_8px_30px_rgba(37,211,102,0.45)] transition-all hover:scale-105 hover:brightness-110 active:scale-95"
           >
             <span className="relative flex size-3">
@@ -1850,7 +1780,7 @@ export default function Home() {
             </span>
             <WhatsAppIcon size={18} className="text-white" />
             <span className="hidden sm:inline">
-              <span className="text-white font-bold">Falar no WhatsApp</span> · Dr. Alesson André
+              <span className="text-white font-bold">Falar no WhatsApp</span> · Santiago, Silva & Santos
             </span>
             <span className="sm:hidden font-bold">WhatsApp</span>
           </a>
@@ -1875,31 +1805,31 @@ export default function Home() {
                 exit={{ opacity: 0, y: 16, scale: 0.99 }}
                 transition={{ duration: 0.24 }}
                 onClick={(event) => event.stopPropagation()}
-                className="relative max-h-[90vh] w-full overflow-y-auto rounded-t-xl border border-slate-700 bg-[#0c1019] p-7 shadow-2xl sm:max-w-xl sm:rounded-xl sm:p-10 text-white"
+                className="relative max-h-[90vh] w-full overflow-y-auto rounded-t-xl border border-slate-700 bg-[#0a1524] p-7 shadow-2xl sm:max-w-xl sm:rounded-xl sm:p-10 text-white"
               >
                 <button
                   type="button"
                   aria-label="Fechar detalhes da especialidade"
                   onClick={() => setActiveArea(null)}
-                  className="absolute right-5 top-5 grid size-10 place-items-center rounded-lg border border-slate-700 bg-slate-800 text-white transition-colors hover:border-[#e5b242] cursor-pointer"
+                  className="absolute right-5 top-5 grid size-10 place-items-center rounded-lg border border-slate-700 bg-slate-800 text-white transition-colors hover:border-[#dfae67] cursor-pointer"
                 >
                   <X size={18} />
                 </button>
 
                 <div className="flex items-center gap-3 pr-12">
-                  <div className="relative size-12 shrink-0 overflow-hidden rounded-lg border border-slate-700 bg-[#07090e] p-1 shadow-xs">
+                  <div className="relative size-12 shrink-0 overflow-hidden rounded-lg border border-slate-700 bg-[#060d16] p-1 shadow-xs">
                     <Image
                       src={LOGO_SYMBOL_SRC}
-                      alt="Monograma AA - Alesson André Advogado"
+                      alt="Medalhão Dourado Coluna Romana - Santiago, Silva & Santos"
                       fill
                       sizes="48px"
                       className="object-contain"
                     />
                   </div>
                   <div>
-                    <p className="eyebrow-light">ALESSON ANDRÉ | ADVOGADO</p>
-                    <p className="text-[10px] font-semibold tracking-wider text-[#e5b242] uppercase">
-                      {LAWYER_NAME} · {LAWYER_TITLE}
+                    <p className="eyebrow-light">SANTIAGO, SILVA & SANTOS</p>
+                    <p className="text-[10px] font-semibold tracking-wider text-[#dfae67] uppercase">
+                      LSS ADVOGADOS ASSOCIADOS
                     </p>
                   </div>
                 </div>
@@ -1916,7 +1846,7 @@ export default function Home() {
                 </p>
 
                 <div className="mt-6 border-t border-slate-800 pt-5">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#e5b242]">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#dfae67]">
                     Atuação e Procedimentos Adotados pelo Escritório:
                   </p>
                   <ul className="mt-4 space-y-3">
@@ -1925,7 +1855,7 @@ export default function Home() {
                         key={topic}
                         className="flex items-center gap-3 text-sm text-slate-300"
                       >
-                        <span className="size-2 shrink-0 rounded-full bg-[#e5b242]" />
+                        <span className="size-2 shrink-0 rounded-full bg-[#dfae67]" />
                         <span>{topic}</span>
                       </li>
                     ))}

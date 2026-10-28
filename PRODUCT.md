@@ -1,46 +1,51 @@
-# ALESSON ANDRÉ — ADVOGADO
-## Dr. Alesson André · Advogado · OAB/MG 233.850 · Carmo do Rio Claro - MG
+# SANTIAGO, SILVA & SANTOS SOCIEDADE DE ADVOGADOS
+## LSS Advogados Associados · Cláudio - MG
+### Identidade Visual, Posicionamento e Diretrizes de Engenharia
 
-## Plataforma
-Site institucional e landing page responsiva de altíssimo padrão desenvolvida em Next.js 16 (App Router), Tailwind CSS v4 e Framer Motion, projetada para transmitir autoridade jurídica inquestionável, excelência técnica, combatividade e atendimento transparente, respaldada por 136 avaliações no Google Meu Negócio com nota máxima 5,0 ★, navegação fluida, modais interativos para detalhamento das especialidades e integração direta com WhatsApp para atendimento imediato e plantão criminal.
+---
 
-## Público
-Pessoas físicas e jurídicas necessitando de defesa criminal combativa, audiência de custódia, prisões em flagrante, acompanhamento em delegacias, ações trabalhistas (rescisão indireta, verbas rescisórias, horas extras, acidentes de trabalho), atuação em órgãos administrativos, diligências em cartórios e correspondência jurídica em Carmo do Rio Claro, Alfenas, Passos, Campo do Meio, Conceição da Aparecida, Guapé, Boa Esperança, Varginha, Sul de Minas e em todo o território nacional (atendimento presencial e online).
+### 1. Dados Institucionais & Contato
 
-## Proposta de Valor & Slogan
-- *"Advocacia combativa, estratégia incisiva & defesa intransigente dos seus direitos."*
-- *"CRIMINAL · TRABALHISTA · ADMINISTRATIVA · FÓRUNS, DELEGACIAS & CARTÓRIOS · CÍVEL · INSS"*
-- *"Nota Máxima 5,0 ★ no Google com 136 avaliações · Sede no Andar dos Advogados."*
+- **Razão Social / Nome Institucional:** Santiago, Silva & Santos Sociedade de Advogados.
+- **Marca / Nome Fantasia:** LSS Advogados Associados.
+- **Advogados Sócios Fundadores:**
+  - Armando Santiago (Advogado Sócio)
+  - Lucas da Silva e Silva (Advogado Sócio)
+  - Ana Carolina C. S. Santos (Advogada Sócia)
+- **Slogan Oficial:** "Orientação jurídica clara e responsável."
+- **Endereço da Sede:** R. Goiás, 521 - 1° andar - Rosário, Cláudio - MG, 35530-000.
+- **Telefone / WhatsApp Comercial:** (37) 99103-2732 (`https://wa.me/5537991032732`).
+- **E-mail de Contato:** contato@santiagosilvaesantos.adv.br.
+- **Redes Sociais:**
+  - Instagram: [@santiagosilvaesantos.adv](https://www.instagram.com/santiagosilvaesantos.adv/)
+  - Linktree: [linktr.ee/santiagosilvaesantos](https://linktr.ee/santiagosilvaesantos)
+- **Horário de Funcionamento:** Segunda a Sexta: 08:00 às 18:00 (com atendimento digital contínuo).
+- **Prova Social Google:** Nota máxima 5,0 ★ em 124 avaliações reais no Google Meu Negócio.
 
-## Identidade Visual (Extraída Diretamente do Logotipo Oficial)
-- **Marca:** Alesson André | Advogado.
-- **Advogado Titular:** Dr. Alesson André (OAB/MG 233.850).
-- **Logotipo:** Monograma moderno em ouro metálico polido tridimensional composto por três traços paralelos ascendentes formando a letra "A", com a inscrição romana estilizada "ALESSON ANDRÉ" e subtítulo "ADVOGADO CRIMINAL & TRABALHISTA · OAB/MG 233.850".
-- **Tema Visual:** Metallic Pure Gold & Obsidian Midnight (Ouro Metálico Polido, Champagne e Obsidian Midnight com toques de Deep Slate). Alternância de dobras de alto contraste entre superfícies escuras luxuosas (`#07090e`, `#0c1019`, `#111723`) com acentos em Ouro Polido (`#e5b242`, `#d49d2c`, `#c58b24`, `#faf0d7`, `#f5e0a9`) e dobras claras em Branco Puro (`#ffffff`) e Silk Surface (`#f8fafc`), harmonizado com a fotografia profissional do Dr. Alesson André com terno escuro e camisa listrada azul e branca.
-- **Paleta de Cores Extraída do Logotipo:**
-  - Ouro Champanhe & Reflexos Claros (`#fdfbf7`, `#faf0d7`, `#f5e0a9`)
-  - Ouro Metálico Polido (`#e5b242`, `#d49d2c`, `#c58b24`)
-  - Ouro Profundo & Sombra Bronzeada (`#9e6b15`, `#7a500e`, `#523408`, `#1f1302`)
-  - Slate Navy Profundo (`#12233f`, `#0a1424`, `#050a14`)
-  - Superfícies Claras (`#ffffff`, `#f8fafc`, `#f1f5f9`)
-  - Obsidian Midnight (`#07090e`, `#0c1019`, `#111723`)
-- **Tipografia:** Cinzel (`--font-cinzel`) para autoridade clássica alinhada ao logotipo e serifas romanas, Playfair Display (`--font-serif`) e Cormorant Garamond (`--font-display`) para títulos editoriais, e Plus Jakarta Sans (`--font-body`) para máxima clareza e legibilidade.
+---
 
-## Informações de Contato & Dados Oficiais
-- Logotipo oficial com monograma AA completo (`public/logo.png`).
-- Monograma AA em insígnia de alto contraste para favicons (`public/logo-symbol.png`, `app/icon.png`, `app/apple-icon.png`, `public/icon.png`, `public/favicon-32x32.png`, `public/favicon-16x16.png`, `public/favicon.ico`).
-- Fotografia oficial do Dr. Alesson André (`public/alesson-andre-hero.jpg`, `public/alesson-andre.jpg`, `public/alesson-andre-sobre.jpg`).
-- Telefone / WhatsApp: (35) 99720-0713 (`https://wa.me/5535997200713`).
-- E-mail: contato@alessonandre.adv.br.
-- Redes Sociais: Instagram @alesson.advogado (`https://www.instagram.com/alesson.advogado/`).
-- Endereço / Sede: ANDAR DOS ADVOGADOS - R. Cap. Pedro Augusto Corrêa, 74 - Sala 03 - Centro, Carmo do Rio Claro - MG, CEP 37150-000.
-- Horário de Atendimento: Segunda a Sexta das 08:00 às 17:30 · Plantão para Urgências Criminais.
-- Prova Social: 5,0 ★ com 136 avaliações no Google Meu Negócio.
+### 2. Identidade Visual & Design System
 
-## Pilares de Atuação
-1. Direito Criminal & Plantão 24h (Plantão para Prisões em Flagrante, Audiências de Custódia, Delegacias de Polícia Civil, Habeas Corpus perante TJMG/STJ/STF, Liberdade Provisória e Execução Penal)
-2. Direito do Trabalho & Defesa do Trabalhador (Rescisão Indireta por culpa do empregador, Verbas Rescisórias atrasadas, Horas Extras, Adicionais de Insalubridade e Periculosidade, Acidentes de Trabalho)
-3. Correspondência Jurídica & Apoio em Fóruns (Audiências presenciais e virtuais, Despachos com Magistrados e Promotores, Diligências, Cópias de Autos e Protocolos em Carmo do Rio Claro e comarcas vizinhas)
-4. Direito Administrativo & Atuação em Cartórios (Processos Administrativos Disciplinares - PAD, recursos em autarquias, retificações de registro civil, averbações e procedimentos extrajudiciais)
-5. Direito Cível & Responsabilidade Civil (Ações Indenizatórias por Danos Morais e Materiais, Contratos Civis e Comerciais, Cobranças Judiciais, Direito do Consumidor e Ações Possessórias)
-6. Direito Previdenciário - INSS (Aposentadoria Rural e Urbana, BPC/LOAS para idosos e pessoas com deficiência, Auxílio-Doença, Pensão por Morte e Ações perante a Justiça Federal)
+- **Logotipo:** Medalhão circular com fita em bronze dourado e capitel neoclássico de coluna jônica/dórica, seguido da inscrição romana estilizada "SANTIAGO SILVA & SANTOS" em Midnight Navy e subtítulo "SOCIEDADE DE ADVOGADOS".
+- **Tema Visual:** Antique Caramel Bronze Gold & Deep Midnight Ink Navy (`#060d16`, `#0a1524`, `#0f2035`) contrastado com superfícies de seda pérola e marfim (`#ffffff`, `#fbf9f5`).
+- **Tipografia:**
+  - Títulos & Display: Cinzel (`--font-cinzel`) e Playfair Display (`--font-serif`).
+  - Textos & Interface: Plus Jakarta Sans (`--font-body`).
+- **Assets Organizados na pasta `public/`:**
+  - `public/logo.png` (Logo completo transparente).
+  - `public/logo-light.png` (Logo com tipografia branca/marfim para contrastes escuros).
+  - `public/logo-symbol.png` (Medalhão do capitel da coluna romana em 512x512).
+  - `public/hero-advogados.jpg` (Fotografia oficial dos 3 advogados sócios).
+  - `public/sede-escritorio-lss.jpg` (Fachada e recepção interna da sede).
+  - `public/favicon.ico`, `icon.png`, `apple-icon.png`, `favicon-32x32.png`, `favicon-16x16.png` (Favicons multi-resolução aplicados na aba).
+
+---
+
+### 3. Pilares de Atuação Especializada
+
+1. **Direito Civil & Contratos:** Danos morais e materiais, elaboração e revisão contratual, cobrança e recuperação de créditos, defesa do consumidor.
+2. **Direito Previdenciário (INSS Rural & Urbano):** Aposentadoria rural por idade para trabalhadores do campo, aposentadorias urbanas, BPC/LOAS, auxílios e ações contra negativas do INSS.
+3. **Direito Trabalhista:** Rescisão indireta, cobrança de verbas rescisórias, horas extras, adicionais de insalubridade e periculosidade, acidentes de trabalho.
+4. **Direito Imobiliário & Regularização Fundiária:** Usucapião judicial e extrajudicial em cartório, regularização de escrituras, contratos de compra e venda, defesas possessórias.
+5. **Direito de Família & Sucessões:** Inventários judiciais e extrajudiciais em cartório, divórcios, partilha de bens, pensão alimentícia e planejamento sucessório.
+6. **Assessoria Empresarial & Negocial:** Consultoria preventiva contínua, contratos comerciais e defesa de empresas de Cláudio e região.
