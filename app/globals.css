@@ -4,31 +4,31 @@
   color-scheme: light dark;
   
   /* Primary Contrast: Obsidian Noir Charcoal & Silk Pearl */
-  --color-black-pure: #080c12;
-  --color-black-surface: #0e141c;
-  --color-black-card: #131b26;
-  --color-black-hover: #1b2635;
+  --color-black-pure: #090b0e;
+  --color-black-surface: #0e1217;
+  --color-black-card: #131820;
+  --color-black-hover: #1b222c;
 
   --color-white-pure: #ffffff;
   --color-white-surface: #faf8f5;
   --color-white-card: #ffffff;
-  --color-white-muted: #f4efe6;
+  --color-white-muted: #f4f0e8;
 
-  /* Primary Logo Champagne & Warm Imperial Gold (Katia Silaine Santos) */
-  --brand-gold-champagne: #fcf8f0;
-  --brand-gold-light: #f3dfb9;
-  --brand-gold-accent: #dfae67;
-  --brand-gold-warm: #ca9759;
-  --brand-gold-primary: #b88540;
-  --brand-gold-rich: #8e6027;
-  --brand-gold-deep: #5e3d14;
-  --brand-gold-noir: #1d1204;
+  /* Primary Logo Champagne & Brushed Sand Gold (Dr. Alexandre Abreu Lúcio) */
+  --brand-gold-champagne: #fbf9f4;
+  --brand-gold-light: #f1e7d6;
+  --brand-gold-accent: #dfcfb2;
+  --brand-gold-warm: #c5b293;
+  --brand-gold-primary: #b5a07f;
+  --brand-gold-rich: #8e7a5e;
+  --brand-gold-deep: #5c4d39;
+  --brand-gold-noir: #1a1610;
 
-  /* Secondary Brand Accent: Deep Prestige Obsidian Charcoal */
-  --brand-navy-light: #3a4b60;
-  --brand-navy-primary: #10161f;
-  --brand-navy-deep: #0b0f15;
-  --brand-navy-midnight: #06090e;
+  /* Secondary Brand Accent: Executive Prestige Charcoal / Deep Slate */
+  --brand-navy-light: #475569;
+  --brand-navy-primary: #1e293b;
+  --brand-navy-deep: #0f172a;
+  --brand-navy-midnight: #090b0e;
 }
 
 @theme inline {
@@ -36,28 +36,29 @@
   --font-cinzel: var(--font-cinzel), "Cinzel", "Trajan Pro", serif;
   --font-sans: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
   
-  --color-gold-50: #fdfbf7;
-  --color-gold-100: #fcf8f0;
-  --color-gold-200: #f3dfb9;
-  --color-gold-300: #dfae67;
-  --color-gold-400: #ca9759;
-  --color-gold-500: #b88540;
-  --color-gold-600: #8e6027;
-  --color-gold-700: #6e471b;
-  --color-gold-800: #4e3211;
-  --color-gold-900: #1d1204;
+  --color-gold-50: #fbf9f4;
+  --color-gold-100: #f6f1e6;
+  --color-gold-200: #ebdcc5;
+  --color-gold-300: #dfcfb2;
+  --color-gold-400: #c5b293;
+  --color-gold-500: #b5a07f;
+  --color-gold-600: #8e7a5e;
+  --color-gold-700: #6b5a43;
+  --color-gold-800: #4d402f;
+  --color-gold-900: #1c1813;
+  --color-gold-950: #0f0c08;
 
-  --color-navy-50: #f1f4f8;
-  --color-navy-100: #dee4ed;
-  --color-navy-200: #bdcadb;
-  --color-navy-300: #91a6c1;
-  --color-navy-400: #5d7ca2;
-  --color-navy-500: #3b5f88;
-  --color-navy-600: #2b496d;
-  --color-navy-700: #1c334f;
-  --color-navy-800: #101e30;
-  --color-navy-900: #0a131e;
-  --color-navy-950: #050a10;
+  --color-navy-50: #f8fafc;
+  --color-navy-100: #f1f5f9;
+  --color-navy-200: #e2e8f0;
+  --color-navy-300: #cbd5e1;
+  --color-navy-400: #94a3b8;
+  --color-navy-500: #64748b;
+  --color-navy-600: #475569;
+  --color-navy-700: #334155;
+  --color-navy-800: #1e293b;
+  --color-navy-900: #0f172a;
+  --color-navy-950: #090b0e;
 }
 
 html {
@@ -70,12 +71,12 @@ body {
   background: #ffffff;
   color: #0e141c;
   font-family: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
-  caret-color: #ca9759;
+  caret-color: #c5b293;
 }
 
 ::selection {
-  background: #ca9759;
-  color: #ffffff;
+  background: #c5b293;
+  color: #090b0e;
 }
 
 .font-cinzel {
@@ -97,11 +98,11 @@ body {
 }
 
 .eyebrow-gold {
-  color: #8e6027;
+  color: #8e7a5e;
 }
 
 .eyebrow-navy {
-  color: #1c334f;
+  color: #1e293b;
 }
 
 .eyebrow-dark {
@@ -109,7 +110,7 @@ body {
 }
 
 .eyebrow-light {
-  color: #f3dfb9;
+  color: #dfcfb2;
 }
 
 .eyebrow-gold::before,
@@ -148,7 +149,7 @@ body {
   bottom: 0;
   left: 0;
   height: 2px;
-  background: #ca9759;
+  background: #c5b293;
   content: "";
   transform: scaleX(0);
   transform-origin: center;
@@ -156,7 +157,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #0e141c;
+  color: #0e1217;
 }
 
 .nav-link:hover::after {
@@ -170,6 +171,6 @@ body {
 }
 
 .footer-link:hover {
-  color: #dfae67;
+  color: #dfcfb2;
   transform: translateX(2px);
 }

@@ -1,46 +1,56 @@
-# KATIA SILAINE SANTOS — ADVOCACIA E CONSULTORIA JURÍDICA
-## Advocacia Cível, Trabalhista e Previdenciária · Caeté - MG
-### Identidade Visual, Posicionamento e Diretrizes de Engenharia
+# ALEXANDRE ABREU LÚCIO — ADVOCACIA
+## Advocacia de Excelência · Pitangui - MG & Atuação Nacional
+### Identidade Visual, Posicionamento Estratégico e Diretrizes de Engenharia
 
 ---
 
 ### 1. Dados Institucionais & Contato
 
-- **Razão Social / Nome Institucional:** Katia Silaine Santos — Advocacia e Consultoria Jurídica
-- **Marca / Nome Fantasia:** Dra. Katia Silaine Santos Advocacia
-- **Advogada Titular:** Dra. Katia Silaine Santos (OAB/MG)
-- **Slogan Oficial:** "Direito Trabalhista, Previdenciário e Cível com clareza, empatia e compromisso."
-- **Endereço da Sede:** R. Pres. Kenedy, 189 - José Brandão, Caeté - MG, 34800-000.
-- **Telefone / WhatsApp Comercial:** (31) 99850-8837 (`https://wa.me/5531998508837`).
-- **E-mail de Contato:** contato@katiasilaine.adv.br.
+- **Razão Social / Nome Institucional:** Escritório de Advocacia - Dr. Alexandre Abreu Lúcio / Alexandre Abreu Lúcio — Advocacia
+- **Advogado Titular:** Dr. Alexandre Abreu Lúcio
+- **Inscrição na OAB:** OAB/MG 122.827
+- **Cargos e Distinções Institucionais:**
+  - Conselheiro Subseccional da OAB (Gestão 2025/2027)
+  - Membro da Comissão de Defesa das Prerrogativas da OAB/MG ⚖️
+  - Membro do IBDFAM (Instituto Brasileiro de Direito de Família)
+- **Slogan / Posicionamento:** "Defesa combativa, rigor técnico e soluções jurídicas com discrição, ética e excelência."
+- **Endereço da Sede:** Praça Dr. Isauro Epifânio, 141 - bairro São Francisco, Pitangui - MG, 35650-000.
+- **Telefone / WhatsApp Comercial:** (37) 99971-0510 (`https://wa.me/5537999710510`).
+- **E-mail de Contato:** contato@alexandreabreulucio.adv.br.
 - **Redes Sociais:**
-  - Instagram: [@drakatiasilainesantos](https://www.instagram.com/drakatiasilainesantos/)
-- **Horário de Funcionamento:** Segunda a Sexta: 08:00 às 18:00 (com suporte e atendimento online contínuo).
-- **Prova Social Google:** Nota máxima 5,0 ★ em 57 avaliações reais e espontâneas no Google Meu Negócio.
+  - Instagram: [@alexandreabreulucio](https://www.instagram.com/alexandreabreulucio/) (780 posts · 3.803 seguidores).
+- **Horário de Funcionamento:** Segunda a Sexta: 08:30 às 18:30 (Atendimento presencial com hora marcada e assessoria digital em todo o Brasil).
+- **Prova Social Google:** Nota máxima 5,0 ★ em 39 avaliações no Google Meu Negócio ("Escritório da empresa em Pitangui, Minas Gerais").
 
 ---
 
-### 2. Identidade Visual & Design System
+### 2. Identidade Visual & Design System (Baseada no Logo Oficial)
 
-- **Logotipo:** Monograma geométrico "KS" em duplo losango bisotado e texturizado em ouro champanhe acetinado metálico, acompanhado da tipografia romana em caixa alta "KATIA SILAINE SANTOS" e subtítulo "— ADVOCACIA E CONSULTORIA JURÍDICA —".
-- **Tema Visual:** Ouro Imperial Champanhe (`#ca9759`, `#b88540`, `#dfae67`, `#8e6027`) e Deep Obsidian Charcoal (`#080c12`, `#0e141c`, `#131b26`), contrastado com superfícies de seda pérola e marfim (`#ffffff`, `#faf8f5`, `#f5efe6`).
+- **Logotipo Oficial:** Selo heráldico circular com fundo Deep Obsidian Noir texturizado, borda circular em chanfro metálico champanhe/platina, elegante monograma serifado entrelaçado "AL", tipografia imperial em caixa alta "DR. ALEXANDRE ABREU LÚCIO", divisor com losango central e inscrição "OAB/MG 122.827".
+- **Tema Visual & Paleta de Cores:**
+  - **Champagne Platinum & Brushed Gold:** `#f9f6ef` (brilho), `#dfcfb2` (realce suave), `#c5b293` (ouro champanhe primário do monograma), `#9e8b6e` (bronze champanhe refinado), `#685943` (sombra quente).
+  - **Deep Obsidian Charcoal & Noir:** `#090b0e` (fundo principal escuro), `#0e1217` (superfície/cards escuros), `#141922` (hover/bordas escuras).
+  - **Seda Pérola & Alabastro Ivory:** `#ffffff` (branco puro para máxima legibilidade e contraste), `#faf8f5` (marfim acetinado), `#f4f0e8` (superfície neutra quente).
+  - **Executive Charcoal / Dark Slate:** `#1a202c`, `#334155` (tom equilibrado do terno executivo do advogado).
 - **Tipografia:**
-  - Títulos & Display: Cinzel (`--font-cinzel`) e Playfair Display (`--font-serif`).
-  - Textos & Interface: Plus Jakarta Sans (`--font-body`).
+  - **Títulos, Monograma & Display:** Cinzel (`--font-cinzel`) e Playfair Display / Cormorant Garamond (`--font-serif`), respeitando a precisão e a nobreza da tipografia clássica romana do logotipo.
+  - **Textos de Apoio & Interface:** Plus Jakarta Sans (`--font-body`), garantindo altíssima legibilidade, modernidade e precisão geométrica em todas as resoluções.
 - **Assets Organizados na pasta `public/` e `app/`:**
-  - `public/logo.png` (Logo completo transparente).
-  - `public/logo-symbol.png` (Monograma dos losangos entrelaçados "KS" em 512x512).
-  - `public/hero-advogada.jpg` (Fotografia oficial da Dra. Katia Silaine Santos em seu escritório).
-  - `public/sobre-advogada.jpg` (Fotografia oficial para a seção sobre a profissional).
-  - `public/favicon.ico`, `app/favicon.ico`, `public/icon.png`, `app/icon.png`, `public/apple-icon.png`, `app/apple-icon.png`, `public/favicon-32x32.png`, `public/favicon-16x16.png`, `public/icon-512x512.png` (Favicons multi-resolução aplicados na aba com cache-busting).
+  - `public/logo.png` (Selo heráldico circular de alta resolução com cantos transparentes).
+  - `public/logo-symbol.png` (Monograma oficial em badge 512x512).
+  - `public/hero-advogado.jpg` (Fotografia oficial do Dr. Alexandre Abreu Lúcio em seu escritório).
+  - `public/sobre-advogado.jpg` (Fotografia oficial para a seção institucional sobre o titular).
+  - `public/dr-alexandre-abreu-lucio.jpg` (Retrato do titular).
+  - Favicons multi-resolução: `public/favicon.ico`, `app/favicon.ico`, `public/icon.png`, `app/icon.png`, `public/apple-icon.png`, `app/apple-icon.png`, `public/favicon-32x32.png`, `public/favicon-16x16.png`, `public/icon-512x512.png`.
 
 ---
 
 ### 3. Pilares de Atuação Especializada
 
-1. **Direito Trabalhista & Defesa do Trabalhador:** Rescisão indireta, horas extras, acidentes de trabalho e doenças ocupacionais, adicionais de insalubridade e periculosidade, verbas rescisórias e reversão de justa causa.
-2. **Direito Previdenciário & Benefícios do INSS:** Concessão e planejamento de aposentadorias (idade, tempo e especial), BPC/LOAS para idosos e PCD de baixa renda, auxílio por incapacidade temporária (auxílio-doença), aposentadoria por invalidez, pensão por morte e salário-maternidade.
-3. **Direito de Família, Sucessões & Inventários:** Inventários judiciais e extrajudiciais em cartório (rápidos e econômicos), divórcio consensual e litigioso, partilha de bens, pensão alimentícia, guarda e planejamento sucessório.
-4. **Direito Civil & Defesa do Consumidor:** Ações indenizatórias por danos morais e materiais, elaboração e revisão de contratos, cobranças de créditos e defesa contra negativações indevidas e fraudes.
-5. **Planejamento Previdenciário Estratégico:** Auditoria detalhada do extrato CNIS, simulação das regras de transição da Reforma e cálculo da melhor data e valor de aposentadoria.
-6. **Atendimento Digital em Todo o Brasil:** Atendimento com acolhimento e agilidade por videoconferência, envio de documentos pelo celular e assinatura digital para qualquer localidade do país.
+1. **Direito de Família & Relações Familiares (Especialista IBDFAM):** Divórcio consensual e litigioso, dissolução de união estável, partilha de bens, fixação e revisão de alimentos (pensão alimentícia), regulamentação de guarda e convivência familiar, com olhar humano e pacificador de conflitos.
+2. **Direito das Sucessões, Inventários & Heranças:** Inventário Extrajudicial em Cartório (rápido, descomplicado e econômico) e Inventário Judicial, planejamento sucessório preventivo (doações com usufruto, testamentos, estruturação patrimonial) e regularização de bens imóveis.
+3. **Direito Civil, Contratos & Reparação de Danos:** Ações indenizatórias por danos morais, materiais e estéticos, recuperação e cobrança de créditos, elaboração e revisão técnica de contratos civis e empresariais, usucapião e disputas patrimoniais.
+4. **Direito do Consumidor & Defesa Contra Abusos:** Atuação firme contra negativações indevidas em cadastros de inadimplentes (SPC/Serasa) com liminar, fraudes financeiras, golpes bancários e contratos abusivos com instituições financeiras.
+5. **Direito Previdenciário & Benefícios do INSS:** Planejamento previdenciário minucioso, concessão e restabelecimento de benefícios negados (Aposentadorias por Idade, Tempo e Especial, BPC/LOAS para idosos e PCD, Auxílio-Doença, Invalidez e Pensão por Morte).
+6. **Direito do Trabalho & Defesa dos Direitos Laborais:** Rescisão indireta por falta grave do empregador, apuração de verbas rescisórias, horas extras, acidentes de trabalho, adicionais de periculosidade e insalubridade e reversão de justa causa indevida.
+7. **Atendimento Digital em Todo o Brasil:** Atendimento estruturado por videoconferência com segurança de dados, assinatura digital pelo celular e atualizações frequentes sobre cada andamento processual.
