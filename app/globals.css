@@ -3,32 +3,32 @@
 :root {
   color-scheme: light dark;
   
-  /* Primary Contrast: Midnight Ink Navy & Silk Pearl */
-  --color-black-pure: #060d16;
-  --color-black-surface: #0a1524;
-  --color-black-card: #0f2035;
-  --color-black-hover: #162c47;
+  /* Primary Contrast: Obsidian Noir Charcoal & Silk Pearl */
+  --color-black-pure: #080c12;
+  --color-black-surface: #0e141c;
+  --color-black-card: #131b26;
+  --color-black-hover: #1b2635;
 
   --color-white-pure: #ffffff;
-  --color-white-surface: #fbf9f5;
+  --color-white-surface: #faf8f5;
   --color-white-card: #ffffff;
   --color-white-muted: #f4efe6;
 
-  /* Primary Logo Antique Caramel Bronze Gold (Santiago, Silva & Santos) */
-  --brand-gold-champagne: #fcf6ea;
-  --brand-gold-light: #f3dfbc;
+  /* Primary Logo Champagne & Warm Imperial Gold (Katia Silaine Santos) */
+  --brand-gold-champagne: #fcf8f0;
+  --brand-gold-light: #f3dfb9;
   --brand-gold-accent: #dfae67;
-  --brand-gold-warm: #c59b5f;
-  --brand-gold-primary: #b38245;
-  --brand-gold-rich: #8f6229;
-  --brand-gold-deep: #5f3e15;
+  --brand-gold-warm: #ca9759;
+  --brand-gold-primary: #b88540;
+  --brand-gold-rich: #8e6027;
+  --brand-gold-deep: #5e3d14;
   --brand-gold-noir: #1d1204;
 
-  /* Secondary Brand Accent: Deep Prestige Midnight Navy */
-  --brand-navy-light: #326096;
-  --brand-navy-primary: #0e223a;
-  --brand-navy-deep: #091728;
-  --brand-navy-midnight: #050d18;
+  /* Secondary Brand Accent: Deep Prestige Obsidian Charcoal */
+  --brand-navy-light: #3a4b60;
+  --brand-navy-primary: #10161f;
+  --brand-navy-deep: #0b0f15;
+  --brand-navy-midnight: #06090e;
 }
 
 @theme inline {
@@ -36,28 +36,28 @@
   --font-cinzel: var(--font-cinzel), "Cinzel", "Trajan Pro", serif;
   --font-sans: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
   
-  --color-gold-50: #fdfaf3;
-  --color-gold-100: #fcf6ea;
-  --color-gold-200: #f3dfbc;
+  --color-gold-50: #fdfbf7;
+  --color-gold-100: #fcf8f0;
+  --color-gold-200: #f3dfb9;
   --color-gold-300: #dfae67;
-  --color-gold-400: #c59b5f;
-  --color-gold-500: #b38245;
-  --color-gold-600: #8f6229;
-  --color-gold-700: #6f491c;
+  --color-gold-400: #ca9759;
+  --color-gold-500: #b88540;
+  --color-gold-600: #8e6027;
+  --color-gold-700: #6e471b;
   --color-gold-800: #4e3211;
   --color-gold-900: #1d1204;
 
-  --color-navy-50: #f1f5fa;
-  --color-navy-100: #dfebf6;
-  --color-navy-200: #bfd5ec;
-  --color-navy-300: #93b7df;
-  --color-navy-400: #5d90cc;
-  --color-navy-500: #3b71b8;
-  --color-navy-600: #2a5592;
-  --color-navy-700: #1c3e6f;
-  --color-navy-800: #0f2544;
-  --color-navy-900: #091728;
-  --color-navy-950: #050d18;
+  --color-navy-50: #f1f4f8;
+  --color-navy-100: #dee4ed;
+  --color-navy-200: #bdcadb;
+  --color-navy-300: #91a6c1;
+  --color-navy-400: #5d7ca2;
+  --color-navy-500: #3b5f88;
+  --color-navy-600: #2b496d;
+  --color-navy-700: #1c334f;
+  --color-navy-800: #101e30;
+  --color-navy-900: #0a131e;
+  --color-navy-950: #050a10;
 }
 
 html {
@@ -68,13 +68,13 @@ html {
 
 body {
   background: #ffffff;
-  color: #091728;
+  color: #0e141c;
   font-family: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
-  caret-color: #c59b5f;
+  caret-color: #ca9759;
 }
 
 ::selection {
-  background: #c59b5f;
+  background: #ca9759;
   color: #ffffff;
 }
 
@@ -97,11 +97,11 @@ body {
 }
 
 .eyebrow-gold {
-  color: #8f6229;
+  color: #8e6027;
 }
 
 .eyebrow-navy {
-  color: #1c3e6f;
+  color: #1c334f;
 }
 
 .eyebrow-dark {
@@ -109,7 +109,7 @@ body {
 }
 
 .eyebrow-light {
-  color: #f3dfbc;
+  color: #f3dfb9;
 }
 
 .eyebrow-gold::before,
@@ -148,7 +148,7 @@ body {
   bottom: 0;
   left: 0;
   height: 2px;
-  background: #c59b5f;
+  background: #ca9759;
   content: "";
   transform: scaleX(0);
   transform-origin: center;
@@ -156,7 +156,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #091728;
+  color: #0e141c;
 }
 
 .nav-link:hover::after {

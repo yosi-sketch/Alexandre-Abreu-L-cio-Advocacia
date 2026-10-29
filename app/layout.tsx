@@ -36,72 +36,72 @@ const bodyFont = Plus_Jakarta_Sans({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#060d16",
+  themeColor: "#080c12",
   colorScheme: "light dark",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.santiagosilvaesantos.adv.br"),
-  title: "Santiago, Silva & Santos | Sociedade de Advogados · LSS Advogados em Cláudio · MG",
+  metadataBase: new URL("https://www.katiasilaine.adv.br"),
+  title: "Katia Silaine Santos | Advocacia e Consultoria Jurídica · Caeté · MG",
   description:
-    "🏛️ Santiago, Silva & Santos Sociedade de Advogados (LSS Advogados Associados). Orientação jurídica clara e responsável em Direito Civil, Previdenciário (INSS), Trabalhista, Imobiliário e Família. Nota máxima 5,0 ★ no Google (124 avaliações). Sede em Cláudio - MG.",
+    "⚖️ Dra. Katia Silaine Santos — Advocacia Cível, Trabalhista e Previdenciária. Orientação jurídica clara, acolhedora e combativa em Caeté - MG. Nota máxima 5,0 ★ no Google (57 avaliações). Atendimento presencial e online em todo o Brasil.",
   keywords: [
-    "Santiago Silva e Santos Sociedade de Advogados",
-    "LSS Advogados Associados",
-    "Advogado em Cláudio MG",
-    "Advogados Cláudio Minas Gerais",
-    "Armando Santiago Advogado",
-    "Lucas da Silva e Silva Advogado",
-    "Ana Carolina Santos Advogada",
-    "Direito Previdenciário Cláudio MG",
-    "Aposentadoria Rural e Urbana Cláudio MG",
-    "Direito do Trabalho Cláudio MG",
-    "Direito Imobiliário e Usucapião Cláudio MG",
-    "Direito Civil e Contratos Cláudio MG",
-    "Direito de Família e Sucessões Cláudio MG",
-    "Escritório de Advocacia Cláudio MG",
-    "Divinópolis Carmópolis Oliveira Cláudio MG",
+    "Katia Silaine Santos Advocacia",
+    "Dra Katia Silaine Santos",
+    "Advocacia e Consultoria Jurídica Caeté",
+    "Advogado Trabalhista Caeté MG",
+    "Direito do Trabalho Caeté MG",
+    "Direito do Trabalhador Caeté",
+    "Direito Previdenciário Caeté MG",
+    "Aposentadoria Caeté MG",
+    "BPC LOAS Caeté MG",
+    "Auxílio Doença Caeté MG",
+    "Salário Maternidade Caeté MG",
+    "Inventário e Sucessões Caeté",
+    "Direito Civil e Família Caeté",
+    "Advogada Caeté Minas Gerais",
+    "Belo Horizonte Sabará Santa Bárbara Caeté MG",
   ],
-  authors: [{ name: "Santiago, Silva & Santos Sociedade de Advogados" }],
-  creator: "Santiago, Silva & Santos Sociedade de Advogados",
-  publisher: "Santiago, Silva & Santos Sociedade de Advogados",
+  authors: [{ name: "Dra. Katia Silaine Santos" }],
+  creator: "Dra. Katia Silaine Santos — Advocacia e Consultoria Jurídica",
+  publisher: "Katia Silaine Santos — Advocacia e Consultoria Jurídica",
   formatDetection: {
     telephone: true,
     address: true,
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=sss2", sizes: "any" },
-      { url: "/favicon-32x32.png?v=sss2", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-16x16.png?v=sss2", type: "image/png", sizes: "16x16" },
-      { url: "/icon.png?v=sss2", type: "image/png", sizes: "192x192" },
-      { url: "/icon-512x512.png?v=sss2", type: "image/png", sizes: "512x512" },
+      { url: "/favicon.ico?v=kss3", sizes: "any" },
+      { url: "/favicon-32x32.png?v=kss3", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png?v=kss3", type: "image/png", sizes: "16x16" },
+      { url: "/icon.png?v=kss3", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512x512.png?v=kss3", type: "image/png", sizes: "512x512" },
     ],
-    shortcut: "/favicon.ico?v=sss2",
-    apple: [{ url: "/apple-icon.png?v=sss2", sizes: "180x180" }],
+    shortcut: "/favicon.ico?v=kss3",
+    apple: [{ url: "/apple-icon.png?v=kss3", sizes: "180x180" }],
   },
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://www.santiagosilvaesantos.adv.br",
-    title: "Santiago, Silva & Santos | Sociedade de Advogados · Cláudio · MG",
+    url: "https://www.katiasilaine.adv.br",
+    title: "Katia Silaine Santos | Advocacia e Consultoria Jurídica · Caeté · MG",
     description:
-      "🏛️ Orientação jurídica clara e responsável. Atuação em Direito Civil, Previdenciário, Trabalhista, Imobiliário e Sucessões. Avaliado com 5,0 ★ no Google (124 avaliações). Sede em Cláudio - MG e atendimento online em todo o Brasil.",
-    siteName: "Santiago, Silva & Santos Sociedade de Advogados",
+      "⚖️ Dra. Katia Silaine Santos — Advocacia Cível, Trabalhista e Previdenciária. Orientação clara, sem enrolação e com dedicação total. Avaliado com 5,0 ★ no Google (57 avaliações). Sede em Caeté - MG e atendimento em todo o Brasil.",
+    siteName: "Katia Silaine Santos Advocacia e Consultoria Jurídica",
     images: [
       {
         url: "/logo.png",
         width: 1024,
-        height: 341,
-        alt: "Santiago, Silva & Santos Sociedade de Advogados",
+        height: 512,
+        alt: "Katia Silaine Santos Advocacia e Consultoria Jurídica",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Santiago, Silva & Santos | Sociedade de Advogados · Cláudio - MG",
+    title: "Katia Silaine Santos | Advocacia e Consultoria Jurídica · Caeté - MG",
     description:
-      "🏛️ Orientação jurídica clara e responsável. Civil, Previdenciário, Trabalhista e Imobiliário. 5,0 ★ no Google (124 avaliações).",
+      "⚖️ Advocacia Cível, Trabalhista e Previdenciária. 5,0 ★ no Google (57 avaliações). Sede em Caeté - MG.",
     images: ["/logo.png"],
   },
 };
@@ -114,43 +114,41 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    name: "Santiago, Silva & Santos Sociedade de Advogados",
-    alternateName: "LSS Advogados Associados",
-    legalName: "Santiago, Silva & Santos Sociedade de Advogados",
-    telephone: "+55-37-99103-2732",
-    email: "contato@santiagosilvaesantos.adv.br",
-    url: "https://www.santiagosilvaesantos.adv.br",
-    image: "https://www.santiagosilvaesantos.adv.br/logo.png",
+    name: "Katia Silaine Santos — Advocacia e Consultoria Jurídica",
+    alternateName: "Dra. Katia Silaine Santos Advocacia",
+    legalName: "Katia Silaine Santos — Advocacia e Consultoria Jurídica",
+    telephone: "+55-31-99850-8837",
+    email: "contato@katiasilaine.adv.br",
+    url: "https://www.katiasilaine.adv.br",
+    image: "https://www.katiasilaine.adv.br/logo.png",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "R. Goiás, 521 - 1° andar - Rosário",
-      addressLocality: "Cláudio",
+      streetAddress: "R. Pres. Kenedy, 189 - José Brandão",
+      addressLocality: "Caeté",
       addressRegion: "MG",
-      postalCode: "35530-000",
+      postalCode: "34800-000",
       addressCountry: "BR",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "-20.4442",
-      longitude: "-44.7672",
+      latitude: "-19.8789",
+      longitude: "-43.6703",
     },
     priceRange: "$$",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",
-      reviewCount: "124",
+      reviewCount: "57",
       bestRating: "5",
       worstRating: "1",
     },
     areaServed: [
-      "Cláudio",
-      "Divinópolis",
-      "Itaúna",
-      "Carmópolis de Minas",
-      "Oliveira",
-      "Passa Tempo",
-      "Carmo da Mata",
-      "Campo Belo",
+      "Caeté",
+      "Belo Horizonte",
+      "Sabará",
+      "Santa Bárbara",
+      "Barão de Cocais",
+      "Nova Lima",
       "Minas Gerais",
       "Brasil",
     ],
@@ -169,9 +167,8 @@ export default function RootLayout({
       },
     ],
     sameAs: [
-      "https://www.instagram.com/santiagosilvaesantos.adv/",
-      "https://linktr.ee/santiagosilvaesantos",
-      "https://wa.me/5537991032732",
+      "https://www.instagram.com/drakatiasilainesantos/",
+      "https://wa.me/5531998508837",
     ],
   };
 
@@ -181,19 +178,19 @@ export default function RootLayout({
       className={`${bodyFont.variable} ${displayFont.variable} ${playfairFont.variable} ${cinzelFont.variable} scroll-smooth dark`}
     >
       <head>
-        <link rel="icon" href="/favicon.ico?v=sss2" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=sss2" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=sss2" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/icon.png?v=sss2" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png?v=sss2" />
-        <link rel="shortcut icon" href="/favicon.ico?v=sss2" />
-        <meta name="theme-color" content="#060d16" />
+        <link rel="icon" href="/favicon.ico?v=kss3" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=kss3" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=kss3" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon.png?v=kss3" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png?v=kss3" />
+        <link rel="shortcut icon" href="/favicon.ico?v=kss3" />
+        <meta name="theme-color" content="#080c12" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen overflow-x-clip bg-white font-sans text-slate-900 antialiased selection:bg-[#c59b5f] selection:text-white">
+      <body className="min-h-screen overflow-x-clip bg-white font-sans text-slate-900 antialiased selection:bg-[#ca9759] selection:text-white">
         {children}
       </body>
     </html>

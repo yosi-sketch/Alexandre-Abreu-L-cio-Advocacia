@@ -1,23 +1,23 @@
-# Santiago, Silva & Santos | Sociedade de Advogados
+# Katia Silaine Santos | Advocacia e Consultoria Jurídica
 
-Landing page e site institucional de altíssimo padrão desenvolvido em Next.js 16 (App Router), Tailwind CSS v4 e Framer Motion para a **Santiago, Silva & Santos Sociedade de Advogados** (LSS Advogados Associados) em Cláudio - MG.
+Landing page e site institucional de altíssimo padrão desenvolvido em Next.js 16 (App Router), Tailwind CSS v4 e Framer Motion para **Katia Silaine Santos — Advocacia e Consultoria Jurídica** em Caeté - MG.
 
-## 🏛️ Dados do Cliente
+## ⚖️ Dados do Cliente
 
-- **Escritório:** Santiago, Silva & Santos Sociedade de Advogados (LSS Advogados Associados)
-- **Sócios Fundadores:** Armando Santiago, Lucas da Silva e Silva e Ana Carolina C. S. Santos
-- **Slogan:** Orientação jurídica clara e responsável
-- **Localização:** R. Goiás, 521 - 1° andar - Rosário, Cláudio - MG, 35530-000
-- **WhatsApp / Telefone:** (37) 99103-2732
-- **E-mail:** contato@santiagosilvaesantos.adv.br
-- **Avaliações:** 5,0 ★ no Google (124 avaliações)
-- **Instagram:** [@santiagosilvaesantos.adv](https://www.instagram.com/santiagosilvaesantos.adv/)
+- **Profissional / Escritório:** Katia Silaine Santos — Advocacia e Consultoria Jurídica
+- **Advogada Titular:** Dra. Katia Silaine Santos
+- **Slogan:** Direito Trabalhista, Previdenciário e Cível com clareza, empatia e compromisso
+- **Localização:** R. Pres. Kenedy, 189 - José Brandão, Caeté - MG, 34800-000
+- **WhatsApp / Telefone:** (31) 99850-8837
+- **E-mail:** contato@katiasilaine.adv.br
+- **Avaliações:** 5,0 ★ no Google (57 avaliações)
+- **Instagram:** [@drakatiasilainesantos](https://www.instagram.com/drakatiasilainesantos/)
 
 ## 🎨 Identidade Visual
 
-- **Paleta de Cores:** Antique Caramel Bronze Gold (`#c59b5f`, `#b38245`, `#dfae67`, `#8f6229`) e Deep Midnight Ink Navy (`#060d16`, `#0a1524`, `#0f2035`), com superfícies em Silk Pearl (`#ffffff`, `#fbf9f5`).
+- **Paleta de Cores:** Imperial Warm Gold (`#ca9759`, `#b88540`, `#dfae67`, `#8e6027`) e Deep Obsidian Charcoal (`#080c12`, `#0e141c`, `#131b26`), com superfícies em Silk Pearl (`#ffffff`, `#faf8f5`, `#f5efe6`).
 - **Tipografia:** Cinzel (`font-cinzel`), Playfair Display (`font-serif`) e Plus Jakarta Sans (`font-sans`).
-- **Assets:** Extraídos e otimizados na pasta `public/` e `app/`.
+- **Assets:** Extraídos do logo original e organizados na pasta `public/` e `app/`.
 
 ## 🚀 Como Executar
 
